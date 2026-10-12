@@ -2,8 +2,6 @@
 
 An interactive, multi-page web platform and digital lab notebook developed for the **Data Science Subject Laboratory** course at **Mohan Babu University (MBU)**.
 
-![Laboratory Theme](theme_image.jpg)
-
 ---
 
 ## 🚀 Features
@@ -44,29 +42,27 @@ An interactive, multi-page web platform and digital lab notebook developed for t
 ## 📂 Project Structure
 
 ```
-mbu_ds_lab/
-├── frontend/
-│   ├── assets/
-│   │   ├── exp1_output.png
-│   │   ├── exp2_output.png
-│   │   └── pdfs/
-│   │       ├── module1.pdf
-│   │       ├── module2.pdf
-│   │       ├── module3.pdf
-│   │       └── module4.pdf
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   ├── config.js
-│   │   ├── experiment-details.js
-│   │   ├── experiments.js
-│   │   └── main.js
-│   ├── index.html        # Profile & Academic Dashboard
-│   ├── tools.html        # Tools & Tech Stack
-│   ├── editor.html       # Python Sandbox Editor
-│   ├── modules.html      # Course Modules with PDFs
-│   ├── experiments.html  # Experiments Catalog
-│   └── experiment.html   # Individual Experiment View
+├── index.html            # Profile & Academic Dashboard
+├── tools.html            # Tools & Tech Stack
+├── editor.html           # Python Sandbox Editor
+├── modules.html          # Course Modules with PDFs
+├── experiments.html      # Experiments Catalog
+├── experiment.html       # Individual Experiment View
+├── css/
+│   └── style.css         # Styling & Animated Mesh Gradient
+├── js/
+│   ├── config.js         # Student & Laboratory Configurations
+│   ├── experiment-details.js # Individual Experiment Logic & Editor
+│   ├── experiments.js    # Preloaded & User Lab Experiments Data
+│   └── main.js           # Navigation, Photo Upload & State Management
+├── assets/
+│   ├── exp1_output.png   # Time Series Output Visualization
+│   ├── exp2_output.png   # Data Cleaning Heatmap Visualization
+│   └── pdfs/             # 10-Chapter Course Module Study PDFs
+│       ├── module1.pdf
+│       ├── module2.pdf
+│       ├── module3.pdf
+│       └── module4.pdf
 ├── backend/
 │   ├── database.py       # Database connection setup
 │   ├── main.py           # FastAPI server endpoints
@@ -80,14 +76,13 @@ mbu_ds_lab/
 
 ## 💻 How to Run Locally
 
-### 1. Frontend
-Serve the static web application with any local HTTP server:
+### 1. Website (Frontend)
+Serve the web application with any local HTTP server:
 
 ```bash
-cd frontend
 python -m http.server 8000
 ```
-Open **[http://localhost:8000](http://localhost:8000)** in your web browser.
+Then open **[http://localhost:8000](http://localhost:8000)** in your web browser.
 
 ### 2. Backend (Optional API)
 Run the FastAPI backend:
