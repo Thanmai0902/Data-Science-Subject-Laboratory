@@ -15,7 +15,7 @@
     <img src="assets/gamma_cloud_top.svg" class="gamma-cloud-top" alt="Cloud">
     <img src="assets/gamma_cloud_bottom.svg" class="gamma-cloud-bottom" alt="Cloud">
 
-    <!-- Gamma Header -->
+    <!-- Header with MBU Logo & Navigation -->
     <header>
         <div class="container header-content">
             <div class="header-left">
@@ -41,122 +41,218 @@
             <span class="gamma-badge">✦ TECHNOLOGY STACK</span>
             <h1 style="font-size: 2.8rem; margin: 12px 0 8px;">Tools &amp; Frameworks <span class="sparkle-icon">✦</span></h1>
             <p style="color: var(--gamma-body); max-width: 680px; font-size: 1.05rem;">
-                Core libraries, computational runtimes, and algorithmic toolkits utilized across the Data Science Digital Library curriculum at Mohan Babu University.
+                Official open-source libraries and scientific computing frameworks utilized across the Data Science Digital Library curriculum. Click on any tool to visit its official documentation website.
             </p>
         </div>
 
-        <!-- Tool Cards Grid -->
+        <!-- Tool Cards Grid with Official Website Links -->
         <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px;">
             
-            <div class="gamma-card">
-                <div class="gamma-slide-header sky-theme" style="padding: 14px 18px; margin-bottom: 14px;">
-                    <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Core Language</span>
-                    <h3 style="font-size: 1.25rem;">Python 3.10+</h3>
-                </div>
-                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px;">
+            <!-- Python -->
+            <div class="gamma-card" style="display: flex; flex-direction: column;">
+                <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="gamma-slide-header sky-theme" style="padding: 14px 18px; margin-bottom: 14px; cursor: pointer;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Core Language</span>
+                            <span style="font-size: 0.85rem; opacity: 0.85;">↗</span>
+                        </div>
+                        <h3 style="font-size: 1.25rem; margin-top: 4px;">Python</h3>
+                    </div>
+                </a>
+                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px; flex-grow: 1;">
                     The primary programming language utilized for scientific scripting, algorithmic problem-solving, and machine learning pipelines.
                 </p>
-                <div style="display: flex; gap: 8px;">
+                <div style="display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;">
                     <span class="tech-tag">Syntax</span>
                     <span class="tech-tag">OOP</span>
                     <span class="tech-tag">Standard Lib</span>
                 </div>
+                <div style="margin-top: auto; border-top: 1px solid var(--card-border); padding-top: 14px;">
+                    <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer" class="gamma-pill-btn" style="width: 100%; justify-content: center; color: var(--gamma-blue);">
+                        Official Website: python.org ↗
+                    </a>
+                </div>
             </div>
 
-            <div class="gamma-card">
-                <div class="gamma-slide-header coral-theme" style="padding: 14px 18px; margin-bottom: 14px;">
-                    <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Data Wrangling</span>
-                    <h3 style="font-size: 1.25rem;">Pandas</h3>
-                </div>
-                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px;">
+            <!-- Pandas -->
+            <div class="gamma-card" style="display: flex; flex-direction: column;">
+                <a href="https://pandas.pydata.org/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="gamma-slide-header coral-theme" style="padding: 14px 18px; margin-bottom: 14px; cursor: pointer;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Data Wrangling</span>
+                            <span style="font-size: 0.85rem; opacity: 0.85;">↗</span>
+                        </div>
+                        <h3 style="font-size: 1.25rem; margin-top: 4px;">Pandas</h3>
+                    </div>
+                </a>
+                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px; flex-grow: 1;">
                     High-performance tabular data structures (DataFrames &amp; Series), vectorized filtering, merging, missing value imputation, and grouping.
                 </p>
-                <div style="display: flex; gap: 8px;">
+                <div style="display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;">
                     <span class="tech-tag">DataFrames</span>
                     <span class="tech-tag">ETL</span>
+                    <span class="tech-tag">Aggregation</span>
+                </div>
+                <div style="margin-top: auto; border-top: 1px solid var(--card-border); padding-top: 14px;">
+                    <a href="https://pandas.pydata.org/" target="_blank" rel="noopener noreferrer" class="gamma-pill-btn" style="width: 100%; justify-content: center; color: var(--gamma-blue);">
+                        Official Website: pandas.pydata.org ↗
+                    </a>
                 </div>
             </div>
 
-            <div class="gamma-card">
-                <div class="gamma-slide-header purple-theme" style="padding: 14px 18px; margin-bottom: 14px;">
-                    <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Numerical Computing</span>
-                    <h3 style="font-size: 1.25rem;">NumPy</h3>
-                </div>
-                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px;">
+            <!-- NumPy -->
+            <div class="gamma-card" style="display: flex; flex-direction: column;">
+                <a href="https://numpy.org/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="gamma-slide-header purple-theme" style="padding: 14px 18px; margin-bottom: 14px; cursor: pointer;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Numerical Computing</span>
+                            <span style="font-size: 0.85rem; opacity: 0.85;">↗</span>
+                        </div>
+                        <h3 style="font-size: 1.25rem; margin-top: 4px;">NumPy</h3>
+                    </div>
+                </a>
+                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px; flex-grow: 1;">
                     N-dimensional array manipulations, linear algebra, Fourier transforms, random sampling, and rapid mathematical broadcasting.
                 </p>
-                <div style="display: flex; gap: 8px;">
+                <div style="display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;">
                     <span class="tech-tag">Matrices</span>
                     <span class="tech-tag">Linear Algebra</span>
+                    <span class="tech-tag">Ndarray</span>
+                </div>
+                <div style="margin-top: auto; border-top: 1px solid var(--card-border); padding-top: 14px;">
+                    <a href="https://numpy.org/" target="_blank" rel="noopener noreferrer" class="gamma-pill-btn" style="width: 100%; justify-content: center; color: var(--gamma-blue);">
+                        Official Website: numpy.org ↗
+                    </a>
                 </div>
             </div>
 
-            <div class="gamma-card">
-                <div class="gamma-slide-header sunset-theme" style="padding: 14px 18px; margin-bottom: 14px;">
-                    <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Visualization</span>
-                    <h3 style="font-size: 1.25rem;">Matplotlib</h3>
-                </div>
-                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px;">
+            <!-- Matplotlib -->
+            <div class="gamma-card" style="display: flex; flex-direction: column;">
+                <a href="https://matplotlib.org/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="gamma-slide-header sunset-theme" style="padding: 14px 18px; margin-bottom: 14px; cursor: pointer;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Visualization</span>
+                            <span style="font-size: 0.85rem; opacity: 0.85;">↗</span>
+                        </div>
+                        <h3 style="font-size: 1.25rem; margin-top: 4px;">Matplotlib</h3>
+                    </div>
+                </a>
+                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px; flex-grow: 1;">
                     Comprehensive 2D plotting library generating publication-grade histograms, scatterplots, error bars, bar charts, and contours.
                 </p>
-                <div style="display: flex; gap: 8px;">
+                <div style="display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;">
                     <span class="tech-tag">2D Plots</span>
                     <span class="tech-tag">Subplots</span>
+                    <span class="tech-tag">Figure</span>
+                </div>
+                <div style="margin-top: auto; border-top: 1px solid var(--card-border); padding-top: 14px;">
+                    <a href="https://matplotlib.org/" target="_blank" rel="noopener noreferrer" class="gamma-pill-btn" style="width: 100%; justify-content: center; color: var(--gamma-blue);">
+                        Official Website: matplotlib.org ↗
+                    </a>
                 </div>
             </div>
 
-            <div class="gamma-card">
-                <div class="gamma-slide-header coral-theme" style="padding: 14px 18px; margin-bottom: 14px;">
-                    <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Statistical Graphics</span>
-                    <h3 style="font-size: 1.25rem;">Seaborn</h3>
-                </div>
-                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px;">
+            <!-- Seaborn -->
+            <div class="gamma-card" style="display: flex; flex-direction: column;">
+                <a href="https://seaborn.pydata.org/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="gamma-slide-header coral-theme" style="padding: 14px 18px; margin-bottom: 14px; cursor: pointer;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Statistical Graphics</span>
+                            <span style="font-size: 0.85rem; opacity: 0.85;">↗</span>
+                        </div>
+                        <h3 style="font-size: 1.25rem; margin-top: 4px;">Seaborn</h3>
+                    </div>
+                </a>
+                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px; flex-grow: 1;">
                     High-level statistical visualization library offering attractive default themes, heatmaps, violin plots, and correlation matrices.
                 </p>
-                <div style="display: flex; gap: 8px;">
+                <div style="display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;">
                     <span class="tech-tag">Heatmaps</span>
                     <span class="tech-tag">Distributions</span>
+                    <span class="tech-tag">Pairplots</span>
+                </div>
+                <div style="margin-top: auto; border-top: 1px solid var(--card-border); padding-top: 14px;">
+                    <a href="https://seaborn.pydata.org/" target="_blank" rel="noopener noreferrer" class="gamma-pill-btn" style="width: 100%; justify-content: center; color: var(--gamma-blue);">
+                        Official Website: seaborn.pydata.org ↗
+                    </a>
                 </div>
             </div>
 
-            <div class="gamma-card">
-                <div class="gamma-slide-header sky-theme" style="padding: 14px 18px; margin-bottom: 14px;">
-                    <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Machine Learning</span>
-                    <h3 style="font-size: 1.25rem;">Scikit-Learn</h3>
-                </div>
-                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px;">
+            <!-- Scikit-Learn -->
+            <div class="gamma-card" style="display: flex; flex-direction: column;">
+                <a href="https://scikit-learn.org/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="gamma-slide-header sky-theme" style="padding: 14px 18px; margin-bottom: 14px; cursor: pointer;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Machine Learning</span>
+                            <span style="font-size: 0.85rem; opacity: 0.85;">↗</span>
+                        </div>
+                        <h3 style="font-size: 1.25rem; margin-top: 4px;">Scikit-Learn</h3>
+                    </div>
+                </a>
+                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px; flex-grow: 1;">
                     Predictive modeling tools implementing classification, regression, clustering (K-Means), dimensionality reduction (PCA), and metrics.
                 </p>
-                <div style="display: flex; gap: 8px;">
+                <div style="display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;">
                     <span class="tech-tag">Classification</span>
                     <span class="tech-tag">Regression</span>
+                    <span class="tech-tag">Clustering</span>
+                </div>
+                <div style="margin-top: auto; border-top: 1px solid var(--card-border); padding-top: 14px;">
+                    <a href="https://scikit-learn.org/" target="_blank" rel="noopener noreferrer" class="gamma-pill-btn" style="width: 100%; justify-content: center; color: var(--gamma-blue);">
+                        Official Website: scikit-learn.org ↗
+                    </a>
                 </div>
             </div>
 
-            <div class="gamma-card">
-                <div class="gamma-slide-header purple-theme" style="padding: 14px 18px; margin-bottom: 14px;">
-                    <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Interactive Notebooks</span>
-                    <h3 style="font-size: 1.25rem;">Jupyter</h3>
-                </div>
-                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px;">
+            <!-- Jupyter -->
+            <div class="gamma-card" style="display: flex; flex-direction: column;">
+                <a href="https://jupyter.org/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="gamma-slide-header purple-theme" style="padding: 14px 18px; margin-bottom: 14px; cursor: pointer;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Interactive Notebooks</span>
+                            <span style="font-size: 0.85rem; opacity: 0.85;">↗</span>
+                        </div>
+                        <h3 style="font-size: 1.25rem; margin-top: 4px;">Jupyter</h3>
+                    </div>
+                </a>
+                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px; flex-grow: 1;">
                     Live browser notebooks combining executable code cells, markdown documentation, mathematical LaTeX equations, and inline graphics.
                 </p>
-                <div style="display: flex; gap: 8px;">
+                <div style="display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;">
                     <span class="tech-tag">IPython</span>
                     <span class="tech-tag">Notebooks</span>
+                    <span class="tech-tag">JupyterLab</span>
+                </div>
+                <div style="margin-top: auto; border-top: 1px solid var(--card-border); padding-top: 14px;">
+                    <a href="https://jupyter.org/" target="_blank" rel="noopener noreferrer" class="gamma-pill-btn" style="width: 100%; justify-content: center; color: var(--gamma-blue);">
+                        Official Website: jupyter.org ↗
+                    </a>
                 </div>
             </div>
 
-            <div class="gamma-card">
-                <div class="gamma-slide-header sunset-theme" style="padding: 14px 18px; margin-bottom: 14px;">
-                    <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Laboratory Practice</span>
-                    <h3 style="font-size: 1.25rem;">Practical Experiments</h3>
-                </div>
-                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px;">
-                    Curated practical laboratory exercises with step-by-step algorithms, dataset schemas, and output visualization graphs.
+            <!-- SciPy -->
+            <div class="gamma-card" style="display: flex; flex-direction: column;">
+                <a href="https://scipy.org/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="gamma-slide-header sunset-theme" style="padding: 14px 18px; margin-bottom: 14px; cursor: pointer;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Scientific Algorithms</span>
+                            <span style="font-size: 0.85rem; opacity: 0.85;">↗</span>
+                        </div>
+                        <h3 style="font-size: 1.25rem; margin-top: 4px;">SciPy</h3>
+                    </div>
+                </a>
+                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px; flex-grow: 1;">
+                    Fundamental algorithms for scientific computing, including optimization, integration, interpolation, eigenvalue problems, and statistics.
                 </p>
-                <div style="display: flex; gap: 8px;">
-                    <a href="experiments.html" class="btn-outline" style="font-size: 0.82rem; padding: 4px 12px;">View Experiments →</a>
+                <div style="display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;">
+                    <span class="tech-tag">Optimization</span>
+                    <span class="tech-tag">Statistics</span>
+                    <span class="tech-tag">Integration</span>
+                </div>
+                <div style="margin-top: auto; border-top: 1px solid var(--card-border); padding-top: 14px;">
+                    <a href="https://scipy.org/" target="_blank" rel="noopener noreferrer" class="gamma-pill-btn" style="width: 100%; justify-content: center; color: var(--gamma-blue);">
+                        Official Website: scipy.org ↗
+                    </a>
                 </div>
             </div>
 
