@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Sandbox | Data Science Subject Laboratory</title>
+    <title>Code Sandbox | Data Science Digital Library</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
             <div class="header-left">
                 <a href="index.html" class="gamma-brand" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
                     <img src="assets/mbu_logo.png" alt="MBU Logo" class="header-logo config-mbu-logo" style="height: 38px; width: auto; object-fit: contain;">
-                    <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.05rem; letter-spacing: 0.5px; color: var(--gamma-navy); text-transform: uppercase;">DATA SCIENCE SUBJECT LABORATORY</span>
+                    <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.05rem; letter-spacing: 0.5px; color: var(--gamma-navy); text-transform: uppercase;">DATA SCIENCE DIGITAL LIBRARY</span>
                 </a>
             </div>
             <div class="header-right">
@@ -92,7 +92,7 @@
                 var editor = ace.edit("code-editor");
                 editor.setTheme("ace/theme/dracula");
                 editor.session.setMode("ace/mode/python");
-                editor.setValue("# Data Science Subject Laboratory Sandbox\nimport pandas as pd\nimport numpy as np\n\nprint('=== Data Science Laboratory Simulation ===')\n\n# Sample DataFrame\ndata = {\n    'Student': ['S. Thanmai', 'Alex', 'Rohan', 'Priya'],\n    'Practical_Score': [45, 42, 48, 44],\n    'Attendance_Pct': [95, 90, 92, 98]\n}\ndf = pd.DataFrame(data)\nprint('\\n[DataFrame Preview]:')\nprint(df.to_string(index=False))\n\nprint('\\nAverage Practical Score:', df['Practical_Score'].mean())\nprint('Status: Script execution completed successfully!')\n");
+                editor.setValue("# Data Science Digital Library Sandbox\nimport pandas as pd\nimport numpy as np\n\nprint('=== Data Science Laboratory Simulation ===')\n\n# Sample DataFrame\ndata = {\n    'Student': ['S. Thanmai', 'Alex', 'Rohan', 'Priya'],\n    'Practical_Score': [45, 42, 48, 44],\n    'Attendance_Pct': [95, 90, 92, 98]\n}\ndf = pd.DataFrame(data)\nprint('\\n[DataFrame Preview]:')\nprint(df.to_string(index=False))\n\nprint('\\nAverage Practical Score:', df['Practical_Score'].mean())\nprint('Status: Script execution completed successfully!')\n");
                 editor.clearSelection();
                 editor.setFontSize("15px");
                 

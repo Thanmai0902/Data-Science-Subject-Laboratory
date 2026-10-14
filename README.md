@@ -1,6 +1,6 @@
-# 📊 Data Science Subject Laboratory
+# 📊 Data Science Digital Library
 
-An interactive, multi-page web platform and digital lab notebook developed for the **Data Science Subject Laboratory** course at **Mohan Babu University (MBU)**.
+An interactive, multi-page web platform and digital lab notebook developed for the **Data Science Digital Library** course at **Mohan Babu University (MBU)**.
 
 🌐 **Live Website:** [https://thanmai0902.github.io/Data-Science-Subject-Laboratory/](https://thanmai0902.github.io/Data-Science-Subject-Laboratory/)
 
