@@ -16,9 +16,6 @@ An interactive, multi-page web platform and digital lab notebook developed for t
 - **🛠️ Tools & Technologies (`tools.html`)**:
   - Complete curriculum tool stack overview (Python, Pandas, NumPy, Matplotlib, Scikit-Learn, Seaborn, Jupyter).
 
-- **💻 Interactive Code Sandbox (`editor.html`)**:
-  - Full-featured browser Python code editor powered by Ace Editor (Dracula theme).
-  - Simulated terminal output to test and run Python code directly in the browser.
 
 - **📚 Course Modules (`modules.html`)**:
   - Comprehensive 4-module curriculum with permanently embedded 10-chapter study materials:
@@ -46,7 +43,6 @@ An interactive, multi-page web platform and digital lab notebook developed for t
 ```
 ├── index.html            # Profile & Academic Dashboard
 ├── tools.html            # Tools & Tech Stack
-├── editor.html           # Python Sandbox Editor
 ├── modules.html          # Course Modules with PDFs
 ├── experiments.html      # Experiments Catalog
 ├── experiment.html       # Individual Experiment View
