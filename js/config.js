@@ -1,5 +1,5 @@
 const CONFIG = {
-    MBU_LOGO: "https://th.bing.com/th/id/OIP.bResCP4t_UH2aiOZUSW0FgHaHa?pid=ImgDet&rs=1", // Updated from user prompt
+    MBU_LOGO: "assets/mbu_logo.png",
     STUDENT_PHOTO: "assets/student_photo.png", // Replace with actual photo path
     STUDENT_NAME: "Mounika",
     STUDENT_ID: "[ADD ID]",

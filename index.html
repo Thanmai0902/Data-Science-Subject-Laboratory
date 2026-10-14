@@ -15,14 +15,13 @@
     <img src="assets/gamma_cloud_top.svg" class="gamma-cloud-top" alt="Gamma Decorative Cloud">
     <img src="assets/gamma_cloud_bottom.svg" class="gamma-cloud-bottom" alt="Gamma Decorative Cloud">
 
-    <!-- Gamma Header with Frosted Glassmorphism & Pill Navigation -->
+    <!-- Header with MBU Logo & Pill Navigation -->
     <header>
         <div class="container header-content">
             <div class="header-left">
-                <a href="index.html" class="gamma-brand">
-                    <span class="gamma-logo-text">GAMMA</span>
-                    <span class="gamma-brand-divider">·</span>
-                    <span class="gamma-brand-subtitle">Data Science Subject Laboratory</span>
+                <a href="index.html" class="gamma-brand" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                    <img src="assets/mbu_logo.png" alt="MBU Logo" class="header-logo config-mbu-logo" style="height: 38px; width: auto; object-fit: contain;">
+                    <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.05rem; letter-spacing: 0.5px; color: var(--gamma-navy); text-transform: uppercase;">DATA SCIENCE SUBJECT LABORATORY</span>
                 </a>
             </div>
             <div class="header-right">
@@ -38,13 +37,21 @@
     </header>
 
     <div class="container">
-        <!-- Gamma Hero Section: Left Editorial + Right Presentation Slide Canvases -->
+        <!-- Profile Hero Section -->
         <section class="gamma-hero-grid">
             
-            <!-- Left Column: Editorial Content matching Gamma layout -->
+            <!-- Left Column: Editorial & MBU Identity -->
             <div class="gamma-editorial-left">
+                <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 20px;">
+                    <img src="assets/mbu_logo.png" alt="MBU Logo" class="config-mbu-logo" style="height: 56px; width: auto; object-fit: contain; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));">
+                    <div>
+                        <h3 style="font-size: 1.2rem; color: var(--gamma-navy); margin-bottom: 2px;">Mohan Babu University</h3>
+                        <span style="font-size: 0.82rem; color: var(--gamma-blue); font-weight: 700; letter-spacing: 0.5px;">DEPARTMENT OF CSE (DATA SCIENCE)</span>
+                    </div>
+                </div>
+
                 <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
-                    <span class="gamma-badge">✦ AI-POWERED LABORATORY PLATFORM</span>
+                    <span class="gamma-badge">✦ SUBJECT LABORATORY WORKSPACE</span>
                 </div>
                 
                 <h1>Data Science <span class="sparkle-icon">✦</span></h1>
@@ -67,24 +74,26 @@
 
                 <!-- Floating MBU badge -->
                 <div style="margin-top: 36px; display: inline-flex; align-items: center; gap: 14px; background: rgba(255, 255, 255, 0.75); border: 1px solid var(--card-border); padding: 12px 20px; border-radius: var(--radius-pill); box-shadow: var(--shadow-sm);">
-                    <img src="" alt="MBU Logo" class="config-mbu-logo" style="height: 28px; width: auto; object-fit: contain;">
+                    <img src="assets/mbu_logo.png" alt="MBU Logo" class="config-mbu-logo" style="height: 28px; width: auto; object-fit: contain;">
                     <div style="font-size: 0.85rem; color: var(--gamma-navy); font-weight: 600;">
                         Mohan Babu University · <span class="config-subject-code" style="color: var(--gamma-blue);"></span>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Column: Stacked Presentation Slide Cards (Gamma Style) -->
+            <!-- Right Column: Stacked Presentation Slide Cards -->
             <div class="gamma-slides-stack">
 
-                <!-- Slide 1: Student Identity Card (Sky Blue Theme) -->
+                <!-- Slide 1: Student Identity Card (With MBU Emblem) -->
                 <div class="gamma-card">
                     <div class="gamma-slide-header sky-theme">
-                        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-                            <div>
-                                <span style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.85; font-weight: 700;">Student Credentials</span>
-                                <h3>Student Identity Card</h3>
-                                <p>Department of CSE (Data Science) · Section 2</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div style="display: flex; align-items: center; gap: 14px;">
+                                <img src="assets/mbu_logo.png" alt="MBU Logo" class="config-mbu-logo" style="height: 48px; width: auto; object-fit: contain; background: #FFFFFF; padding: 4px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+                                <div>
+                                    <span style="font-size: 0.74rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.9; font-weight: 700;">Mohan Babu University</span>
+                                    <h3 style="margin: 0; font-size: 1.25rem;">Student Identity Card</h3>
+                                </div>
                             </div>
                             <span style="background: rgba(255, 255, 255, 0.25); border-radius: 9999px; padding: 4px 12px; font-size: 0.8rem; font-weight: 600;">B.Tech</span>
                         </div>
