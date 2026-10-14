@@ -4,134 +4,210 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Science Subject Laboratory | MBU</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header style="position: sticky; top: 0; background: var(--card-bg); z-index: 1000; box-shadow: var(--shadow-sm);">
-        <div class="container header-content" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+    <!-- Dreamy Gamma Floating Clouds in Background -->
+    <img src="assets/gamma_cloud_top.svg" class="gamma-cloud-top" alt="Gamma Decorative Cloud">
+    <img src="assets/gamma_cloud_bottom.svg" class="gamma-cloud-bottom" alt="Gamma Decorative Cloud">
+
+    <!-- Gamma Header with Frosted Glassmorphism & Pill Navigation -->
+    <header>
+        <div class="container header-content">
             <div class="header-left">
-                <img src="" alt="MBU Logo" class="header-logo config-mbu-logo" style="height: 30px;">
-            </div>
-            <div class="header-center" style="font-weight: 700; color: var(--primary-color); font-size: 1.1rem; letter-spacing: 1px; display: flex; align-items: center; gap: 10px;">
-                <img src="https://media.istockphoto.com/id/1392726957/vector/data-science-icon-line-style-element-from-data-organization-collection-thin-data-science.jpg?s=612x612&w=0&k=20&c=uMAXCDbPMgvpHY3yc-La0oFfUzkJzzE5Q6haD8Idb5E=" alt="Data Science Logo" style="height: 28px; mix-blend-mode: multiply;">
-                DATA SCIENCE SUBJECT LABORATORY
+                <a href="index.html" class="gamma-brand">
+                    <span class="gamma-logo-text">GAMMA</span>
+                    <span class="gamma-brand-divider">·</span>
+                    <span class="gamma-brand-subtitle">Data Science Subject Laboratory</span>
+                </a>
             </div>
             <div class="header-right">
-                <nav style="display: flex; gap: 25px;">
-                    <a href="index.html" style="text-decoration: none; color: var(--text-main); font-weight: 600; font-size: 0.95rem; transition: color 0.2s;">Profile</a>
-                    <a href="tools.html" style="text-decoration: none; color: var(--text-main); font-weight: 600; font-size: 0.95rem; transition: color 0.2s;">Tools</a>
-                    <a href="editor.html" style="text-decoration: none; color: var(--text-main); font-weight: 600; font-size: 0.95rem; transition: color 0.2s;">Editor</a>
-                    <a href="modules.html" style="text-decoration: none; color: var(--text-main); font-weight: 600; font-size: 0.95rem; transition: color 0.2s;">Modules</a>
-                    <a href="experiments.html" style="text-decoration: none; color: var(--text-main); font-weight: 600; font-size: 0.95rem; transition: color 0.2s;">Experiments</a>
+                <nav>
+                    <a href="index.html" class="nav-pill active">Profile</a>
+                    <a href="tools.html" class="nav-pill">Tools</a>
+                    <a href="editor.html" class="nav-pill">Editor</a>
+                    <a href="modules.html" class="nav-pill">Modules</a>
+                    <a href="experiments.html" class="nav-pill">Experiments</a>
                 </nav>
             </div>
         </div>
     </header>
 
     <div class="container">
-        <section id="profile" class="hero" style="display: grid; grid-template-columns: 350px 1fr; gap: 40px; margin: 40px 0 0; scroll-margin-top: 100px;">
-            <!-- Left Column: Profile Stack -->
-            <div style="display: flex; flex-direction: column; gap: 30px;">
-                <div class="card course-card" style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 20px; text-align: left;">
-                    <img src="" alt="MBU Logo" class="header-logo config-mbu-logo" style="margin-bottom: 12px; height: 35px; width: auto; object-fit: contain;">
-                    <h3 style="color: var(--primary-color); margin-bottom: 8px; font-size: 1.2rem;">Data Science</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.4;">Mohan Babu University<br>Subject Code: <span class="config-subject-code"></span></p>
+        <!-- Gamma Hero Section: Left Editorial + Right Presentation Slide Canvases -->
+        <section class="gamma-hero-grid">
+            
+            <!-- Left Column: Editorial Content matching Gamma layout -->
+            <div class="gamma-editorial-left">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                    <span class="gamma-badge">✦ AI-POWERED LABORATORY PLATFORM</span>
+                </div>
+                
+                <h1>Data Science <span class="sparkle-icon">✦</span></h1>
+                
+                <p>
+                    Data Science is a multifaceted discipline that integrates computational algorithms, statistical reasoning, and domain expertise to extract actionable knowledge from complex datasets.
+                </p>
+                <p>
+                    At <strong>Mohan Babu University (MBU)</strong>, this dedicated subject laboratory provides a modern digital research workspace. It features interactive python sandboxes, preloaded experiment protocols, 10-chapter module textbooks, and continuous semester performance analytics.
+                </p>
+                <p style="color: var(--gamma-muted); font-size: 0.98rem;">
+                    Curated under the academic guidance of <strong>Faculty: S.Bosu Babu</strong> for Department of Computer Science &amp; Engineering (Data Science).
+                </p>
+
+                <div class="gamma-editorial-actions">
+                    <a href="modules.html" class="btn-primary">Explore Modules →</a>
+                    <a href="editor.html" class="gamma-pill-btn">Interactive Sandbox ✨</a>
+                    <a href="experiments.html" class="gamma-pill-btn">View Lab Experiments</a>
                 </div>
 
-                <div class="card id-card-section" style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 15px;">
-                    <div class="id-card-preview" style="background: linear-gradient(to bottom right, var(--card-bg), #0F172A); width: 100%; border-radius: var(--radius); padding: 15px; border: 1px solid var(--border-color); text-align: center; box-shadow: var(--shadow-sm);">
-                        <h3 style="color: var(--primary-color); margin-bottom: 15px; font-weight: 700; letter-spacing: 1px; font-size: 1rem;">STUDENT ID CARD</h3>
-                        
-                        <div style="position: relative; width: 80px; height: 80px; margin: 0 auto 10px;">
-                            <img id="studentPhotoPreview" src="https://ui-avatars.com/api/?name=S+Thanmai&background=8B5CF6&color=fff" alt="Student Photo" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary-color); background: var(--bg-color);">
-                            <label for="photoUpload" style="position: absolute; bottom: -5px; right: -5px; background: var(--primary-color); color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 1.2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.4);" title="Upload Photo">+</label>
+                <!-- Floating MBU badge -->
+                <div style="margin-top: 36px; display: inline-flex; align-items: center; gap: 14px; background: rgba(255, 255, 255, 0.75); border: 1px solid var(--card-border); padding: 12px 20px; border-radius: var(--radius-pill); box-shadow: var(--shadow-sm);">
+                    <img src="" alt="MBU Logo" class="config-mbu-logo" style="height: 28px; width: auto; object-fit: contain;">
+                    <div style="font-size: 0.85rem; color: var(--gamma-navy); font-weight: 600;">
+                        Mohan Babu University · <span class="config-subject-code" style="color: var(--gamma-blue);"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Stacked Presentation Slide Cards (Gamma Style) -->
+            <div class="gamma-slides-stack">
+
+                <!-- Slide 1: Student Identity Card (Sky Blue Theme) -->
+                <div class="gamma-card">
+                    <div class="gamma-slide-header sky-theme">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                            <div>
+                                <span style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.85; font-weight: 700;">Student Credentials</span>
+                                <h3>Student Identity Card</h3>
+                                <p>Department of CSE (Data Science) · Section 2</p>
+                            </div>
+                            <span style="background: rgba(255, 255, 255, 0.25); border-radius: 9999px; padding: 4px 12px; font-size: 0.8rem; font-weight: 600;">B.Tech</span>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 24px; align-items: center; margin-bottom: 20px;">
+                        <!-- Student Photo with Upload Icon -->
+                        <div style="position: relative; width: 84px; height: 84px; flex-shrink: 0;">
+                            <img id="studentPhotoPreview" src="https://ui-avatars.com/api/?name=S+Thanmai&background=2563EB&color=fff" alt="Student Photo" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 3px solid #2563EB; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);">
+                            <label for="photoUpload" style="position: absolute; bottom: -2px; right: -2px; background: #2563EB; color: white; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 1.1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.3);" title="Upload Photo">+</label>
                             <input type="file" id="photoUpload" accept="image/*" style="display: none;">
                         </div>
 
-                        <h2 style="margin-bottom: 2px; font-size: 1.1rem;">S. Thanmai</h2>
-                        <p style="color: var(--text-muted); font-weight: 500; margin-bottom: 10px; font-size: 0.85rem;">B.Tech</p>
-                        
-                        <div style="text-align: left; background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; font-size: 0.85rem; border: 1px solid var(--border-color);">
-                            <p style="margin-bottom: 8px;"><strong>Roll No:</strong> 24102A030121</p>
-                            <p style="margin-bottom: 8px;"><strong>Branch:</strong> CSE (DS)</p>
-                            <p style="margin-bottom: 8px;"><strong>Section:</strong> 2</p>
-                            <p style="margin-bottom: 10px;"><strong>Faculty:</strong> S.Bosu Babu</p>
-                            
-                            <div style="display: flex; gap: 10px; border-top: 1px solid var(--border-color); padding-top: 10px; justify-content: center; font-size: 0.8rem;">
-                                <a href="https://www.linkedin.com/in/thanmai-sutraye-0570a4354" target="_blank" style="color: var(--accent-color); text-decoration: none; font-weight: 600; display: flex; align-items: center; gap: 5px;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg> LinkedIn
-                                </a>
-                                <a href="https://github.com/Thanmai0902" target="_blank" style="color: var(--accent-color); text-decoration: none; font-weight: 600; display: flex; align-items: center; gap: 5px;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg> GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Column: Stats & Chart Section -->
-            <div style="display: flex; flex-direction: column; gap: 20px; width: 100%; padding-top: 10px;">
-                <!-- Stats Grid -->
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
-                    <div class="card" style="padding: 20px; display: flex; flex-direction: column; justify-content: space-between; min-height: 140px;">
-                        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-                            <h3 style="color: var(--text-main); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px;">Practical</h3>
-                            <div style="background: rgba(17, 17, 17, 0.05); padding: 10px; border-radius: 8px; color: var(--text-main);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-                            </div>
-                        </div>
-                        <div style="margin-top: 15px;">
-                            <h2 style="color: var(--text-main); font-size: 2rem; font-weight: 700; line-height: 1;">45<span style="font-size: 1rem; color: var(--text-muted); font-weight: 500; margin-left: 4px;">/ 50</span></h2>
-                        </div>
-                    </div>
-                    
-                    <div class="card" style="padding: 20px; display: flex; flex-direction: column; justify-content: space-between; min-height: 140px;">
-                        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-                            <h3 style="color: var(--text-main); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px;">Total</h3>
-                            <div style="background: rgba(180, 133, 246, 0.15); padding: 10px; border-radius: 8px; color: var(--primary-color);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
-                            </div>
-                        </div>
-                        <div style="margin-top: 15px;">
-                            <h2 style="color: var(--text-main); font-size: 2rem; font-weight: 700; line-height: 1;">92<span style="font-size: 1rem; color: var(--text-muted); font-weight: 500; margin-left: 4px;">/ 100</span></h2>
+                        <div>
+                            <h2 style="font-size: 1.5rem; margin-bottom: 4px; color: var(--gamma-navy);">S. Thanmai</h2>
+                            <p style="color: var(--gamma-muted); font-size: 0.92rem; font-weight: 500;">
+                                Roll Number: <strong style="color: var(--gamma-navy);">24102A030121</strong>
+                            </p>
+                            <p style="color: var(--gamma-muted); font-size: 0.88rem;">
+                                Faculty Mentor: <strong style="color: var(--gamma-navy);">S.Bosu Babu</strong>
+                            </p>
                         </div>
                     </div>
 
-                    <div class="card" style="padding: 20px; display: flex; flex-direction: column; justify-content: space-between; min-height: 140px;">
-                        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-                            <h3 style="color: var(--text-main); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px;">Attendance</h3>
-                            <div style="background: rgba(17, 17, 17, 0.05); padding: 10px; border-radius: 8px; color: var(--text-main);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                            </div>
-                        </div>
-                        <div style="margin-top: 15px;">
-                            <h2 style="color: var(--text-main); font-size: 2rem; font-weight: 700; line-height: 1;">95<span style="font-size: 1rem; color: var(--text-muted); font-weight: 500; margin-left: 2px;">%</span></h2>
-                        </div>
+                    <!-- Details Chip Row -->
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
+                        <span class="gamma-pill-btn" style="cursor: default;">Branch: CSE (DS)</span>
+                        <span class="gamma-pill-btn" style="cursor: default;">Semester IV</span>
+                        <span class="gamma-pill-btn" style="cursor: default;">Section 2</span>
+                    </div>
+
+                    <!-- Social / Profile Links -->
+                    <div style="display: flex; gap: 12px; border-top: 1px solid var(--card-border); padding-top: 16px;">
+                        <a href="https://www.linkedin.com/in/thanmai-sutraye-0570a4354" target="_blank" class="gamma-pill-btn" style="color: #0A66C2;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            LinkedIn Profile →
+                        </a>
+                        <a href="https://github.com/Thanmai0902" target="_blank" class="gamma-pill-btn" style="color: #0F172A;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            GitHub Portfolio →
+                        </a>
                     </div>
                 </div>
 
-                <!-- Growth Graph -->
-                <div class="card" style="padding: 20px; display: flex; flex-direction: column; cursor: pointer; transition: transform 0.2s;" onclick="animateChart()" title="Click to replay animation">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                        <h3 style="color: var(--text-main); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px;">Semester Growth Tracker</h3>
-                        <span style="font-size: 0.8rem; color: var(--text-muted); background: rgba(0,0,0,0.05); padding: 4px 8px; border-radius: 12px;">Click to Replay</span>
+                <!-- Slide 2: Growth Report & Marks (Coral / Cyan Theme like Template) -->
+                <div class="gamma-card">
+                    <div class="gamma-slide-header coral-theme">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <span style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.9; font-weight: 700;">Academic Performance</span>
+                                <h3>Continuous Evaluation Report</h3>
+                                <p>Laboratory Assessment &amp; Semester Progression</p>
+                            </div>
+                            <span class="gamma-pill-btn" style="font-size: 0.78rem; padding: 6px 14px; background: rgba(255,255,255,0.9);">
+                                Replay Tracker ↺
+                            </span>
+                        </div>
                     </div>
-                    <div style="position: relative; height: 180px; width: 100%;">
+
+                    <!-- 3 Stats Columns -->
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 20px;">
+                        <div style="background: #F8FAFC; border: 1px solid var(--card-border); border-radius: 16px; padding: 16px; text-align: center;">
+                            <span style="font-size: 0.8rem; font-weight: 600; color: var(--gamma-muted); text-transform: uppercase; letter-spacing: 0.5px;">Practical</span>
+                            <div style="font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: var(--gamma-navy); margin-top: 4px;">
+                                45<span style="font-size: 0.95rem; color: var(--gamma-muted); font-family: sans-serif;">/50</span>
+                            </div>
+                        </div>
+
+                        <div style="background: #F8FAFC; border: 1px solid var(--card-border); border-radius: 16px; padding: 16px; text-align: center;">
+                            <span style="font-size: 0.8rem; font-weight: 600; color: var(--gamma-muted); text-transform: uppercase; letter-spacing: 0.5px;">Total Marks</span>
+                            <div style="font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: var(--gamma-blue); margin-top: 4px;">
+                                92<span style="font-size: 0.95rem; color: var(--gamma-muted); font-family: sans-serif;">/100</span>
+                            </div>
+                        </div>
+
+                        <div style="background: #F8FAFC; border: 1px solid var(--card-border); border-radius: 16px; padding: 16px; text-align: center;">
+                            <span style="font-size: 0.8rem; font-weight: 600; color: var(--gamma-muted); text-transform: uppercase; letter-spacing: 0.5px;">Attendance</span>
+                            <div style="font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: #10B981; margin-top: 4px;">
+                                95<span style="font-size: 0.95rem; color: var(--gamma-muted); font-family: sans-serif;">%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Chart Container -->
+                    <div style="cursor: pointer; position: relative; height: 180px; width: 100%;" onclick="animateChart()" title="Click to replay graph animation">
                         <canvas id="growthChart"></canvas>
                     </div>
                 </div>
-            </div>
-        
-        </section>
 
+                <!-- Slide 3: Course Curriculum & Modules (Purple Theme) -->
+                <div class="gamma-card">
+                    <div class="gamma-slide-header purple-theme">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <span style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.9; font-weight: 700;">Curriculum Modules</span>
+                                <h3>The Art of Data Computing</h3>
+                                <p>Comprehensive 4-Module Curriculum with 10-Chapter Guides</p>
+                            </div>
+                            <a href="modules.html" class="gamma-pill-btn" style="font-size: 0.78rem; padding: 6px 14px;">Open Decks →</a>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <a href="modules.html" class="gamma-pill-btn">📘 Module 01: Data Science Core</a>
+                        <a href="modules.html" class="gamma-pill-btn">🔍 Module 02: Data Extraction</a>
+                        <a href="modules.html" class="gamma-pill-btn">📊 Module 03: Data Visualization</a>
+                        <a href="modules.html" class="gamma-pill-btn">📈 Module 04: Statistical Thinking</a>
+                        <a href="editor.html" class="gamma-pill-btn" style="background: #EFF6FF; color: var(--gamma-blue);">💻 Code Sandbox</a>
+                        <a href="experiments.html" class="gamma-pill-btn" style="background: #FAF5FF; color: var(--gamma-purple);">🔬 12 Experiments</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
     </div>
-    
+
+    <!-- Scripts -->
     <script src="js/config.js"></script>
     <script src="js/experiments.js"></script>
     <script src="js/main.js"></script>
-<!-- Chart.js Setup -->
+    
+    <!-- Chart.js Setup for Gamma Style Line Curve -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         let growthChartInstance = null;
@@ -141,80 +217,75 @@
             if (!canvas) return;
             const ctx = canvas.getContext('2d');
             
-            // If chart exists, destroy it so we can re-animate it from scratch
             if (growthChartInstance) {
                 growthChartInstance.destroy();
             }
 
-            // Gradient for the line
-            const gradient = ctx.createLinearGradient(0, 0, 0, 200);
-            gradient.addColorStop(0, 'rgba(180, 133, 246, 0.5)'); // Lavender
-            gradient.addColorStop(1, 'rgba(180, 133, 246, 0.0)'); // Transparent
+            const gradient = ctx.createLinearGradient(0, 0, 0, 180);
+            gradient.addColorStop(0, 'rgba(37, 99, 235, 0.25)'); // Gamma blue fade
+            gradient.addColorStop(1, 'rgba(37, 99, 235, 0.0)');
 
             growthChartInstance = new Chart(ctx, {
                 type: 'line',
                 data: {
-                    labels: ['Sem 1', 'Sem 2', 'Sem 3', 'Sem 4'],
+                    labels: ['Semester 1', 'Semester 2', 'Semester 3', 'Semester 4'],
                     datasets: [{
-                        label: 'Overall Performance',
-                        data: [72, 78, 85, 92], // Simulating growth
-                        borderColor: '#111111', // Black line
+                        label: 'Academic Growth',
+                        data: [72, 78, 85, 92],
+                        borderColor: '#2563EB',
                         backgroundColor: gradient,
                         borderWidth: 3,
-                        pointBackgroundColor: '#B485F6', // Lavender point
-                        pointBorderColor: '#111111', // Black border
-                        pointBorderWidth: 2,
-                        pointRadius: 5,
-                        pointHoverRadius: 7,
+                        pointBackgroundColor: '#FFFFFF',
+                        pointBorderColor: '#2563EB',
+                        pointBorderWidth: 3,
+                        pointRadius: 6,
+                        pointHoverRadius: 8,
                         fill: true,
-                        tension: 0.4 // Smooth curve
+                        tension: 0.45
                     }]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
                     animation: {
-                        duration: 1500,
+                        duration: 1400,
                         easing: 'easeOutQuart'
                     },
                     plugins: {
                         legend: { display: false },
                         tooltip: {
-                            backgroundColor: '#FAF9F6',
-                            titleColor: '#211A20',
-                            bodyColor: '#211A20',
-                            borderColor: '#B5D13E',
-                            borderWidth: 1,
-                            padding: 10,
+                            backgroundColor: '#0C2138',
+                            titleColor: '#FFFFFF',
+                            bodyColor: '#93C5FD',
+                            padding: 12,
+                            cornerRadius: 10,
                             displayColors: false,
                             callbacks: {
                                 label: function(context) {
-                                    return context.parsed.y + ' Marks';
+                                    return context.parsed.y + ' Marks Achieved';
                                 }
                             }
                         }
                     },
                     scales: {
                         y: {
-                            beginAtZero: false,
                             min: 60,
                             max: 100,
                             grid: {
-                                color: 'rgba(33, 26, 32, 0.05)',
+                                color: 'rgba(203, 224, 243, 0.6)',
                                 drawBorder: false,
                             },
                             ticks: {
-                                color: '#645561',
-                                stepSize: 10
+                                color: '#6B8299',
+                                stepSize: 10,
+                                font: { family: "'Plus Jakarta Sans', sans-serif" }
                             }
                         },
                         x: {
-                            grid: {
-                                display: false,
-                                drawBorder: false,
-                            },
+                            grid: { display: false },
                             ticks: {
-                                color: '#645561'
+                                color: '#6B8299',
+                                font: { family: "'Plus Jakarta Sans', sans-serif" }
                             }
                         }
                     }
@@ -223,12 +294,9 @@
         }
 
         document.addEventListener('DOMContentLoaded', initChart);
-
-        // Click handler to re-trigger the animation
         window.animateChart = function() {
             initChart();
         };
     </script>
-
 </body>
 </html>

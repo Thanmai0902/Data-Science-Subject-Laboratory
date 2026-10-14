@@ -1,0 +1,45 @@
+<svg width="450" height="320" viewBox="0 0 450 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="cloudShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#4B5563" flood-opacity="0.12"/>
+    </filter>
+    <!-- Shading Gradients -->
+    <linearGradient id="cloudGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="30%" stop-color="#7C3AED"/>
+      <stop offset="65%" stop-color="#C084FC"/>
+      <stop offset="85%" stop-color="#F472B6"/>
+      <stop offset="100%" stop-color="#FDE68A"/>
+    </linearGradient>
+    <linearGradient id="cloudGrad2" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="40%" stop-color="#A855F7"/>
+      <stop offset="75%" stop-color="#F472B6"/>
+      <stop offset="100%" stop-color="#FED7AA"/>
+    </linearGradient>
+    <radialGradient id="highlightGrad" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#DDD6FE" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <g filter="url(#cloudShadow)">
+    <!-- Base Cloud Clusters -->
+    <path d="M120 220 
+             C90 220, 60 195, 60 160 
+             C60 130, 85 105, 115 102 
+             C130 60, 180 35, 230 45 
+             C275 15, 340 30, 365 75 
+             C400 85, 425 118, 420 155 
+             C435 185, 415 220, 375 220 
+             Z" 
+          fill="url(#cloudGrad1)" />
+          
+    <!-- Soft Overlay Puffs -->
+    <circle cx="210" cy="110" r="75" fill="url(#highlightGrad)" mix-blend-mode="overlay"/>
+    <circle cx="310" cy="130" r="70" fill="url(#cloudGrad2)" opacity="0.85"/>
+    <circle cx="150" cy="155" r="55" fill="url(#cloudGrad2)" opacity="0.75"/>
+    <ellipse cx="270" cy="190" rx="100" ry="40" fill="#FED7AA" opacity="0.6"/>
+  </g>
+</svg>

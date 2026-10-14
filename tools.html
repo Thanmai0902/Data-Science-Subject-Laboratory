@@ -3,270 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Science Subject Laboratory | MBU</title>
+    <title>Tools & Technologies | Data Science Subject Laboratory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header style="position: sticky; top: 0; background: var(--card-bg); z-index: 1000; box-shadow: var(--shadow-sm);">
-        <div class="container header-content" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+    <!-- Dreamy Gamma Floating Clouds -->
+    <img src="assets/gamma_cloud_top.svg" class="gamma-cloud-top" alt="Cloud">
+    <img src="assets/gamma_cloud_bottom.svg" class="gamma-cloud-bottom" alt="Cloud">
+
+    <!-- Gamma Header -->
+    <header>
+        <div class="container header-content">
             <div class="header-left">
-                <img src="" alt="MBU Logo" class="header-logo config-mbu-logo" style="height: 30px;">
-            </div>
-            <div class="header-center" style="font-weight: 700; color: var(--primary-color); font-size: 1.1rem; letter-spacing: 1px; display: flex; align-items: center; gap: 10px;">
-                <img src="https://media.istockphoto.com/id/1392726957/vector/data-science-icon-line-style-element-from-data-organization-collection-thin-data-science.jpg?s=612x612&w=0&k=20&c=uMAXCDbPMgvpHY3yc-La0oFfUzkJzzE5Q6haD8Idb5E=" alt="Data Science Logo" style="height: 28px; mix-blend-mode: multiply;">
-                DATA SCIENCE SUBJECT LABORATORY
+                <a href="index.html" class="gamma-brand">
+                    <span class="gamma-logo-text">GAMMA</span>
+                    <span class="gamma-brand-divider">·</span>
+                    <span class="gamma-brand-subtitle">Data Science Subject Laboratory</span>
+                </a>
             </div>
             <div class="header-right">
-                <nav style="display: flex; gap: 25px;">
-                    <a href="index.html" style="text-decoration: none; color: var(--text-main); font-weight: 600; font-size: 0.95rem; transition: color 0.2s;">Profile</a>
-                    <a href="tools.html" style="text-decoration: none; color: var(--text-main); font-weight: 600; font-size: 0.95rem; transition: color 0.2s;">Tools</a>
-                    <a href="editor.html" style="text-decoration: none; color: var(--text-main); font-weight: 600; font-size: 0.95rem; transition: color 0.2s;">Editor</a>
-                    <a href="modules.html" style="text-decoration: none; color: var(--text-main); font-weight: 600; font-size: 0.95rem; transition: color 0.2s;">Modules</a>
-                    <a href="experiments.html" style="text-decoration: none; color: var(--text-main); font-weight: 600; font-size: 0.95rem; transition: color 0.2s;">Experiments</a>
+                <nav>
+                    <a href="index.html" class="nav-pill">Profile</a>
+                    <a href="tools.html" class="nav-pill active">Tools</a>
+                    <a href="editor.html" class="nav-pill">Editor</a>
+                    <a href="modules.html" class="nav-pill">Modules</a>
+                    <a href="experiments.html" class="nav-pill">Experiments</a>
                 </nav>
             </div>
         </div>
     </header>
 
-    <div class="container">
-        <!-- Tools Section -->
-        <section id="tools" class="tools-section" style="border-bottom: 1px solid var(--border-color); padding-bottom: 40px; margin-bottom: 40px; margin-top: 50px; scroll-margin-top: 100px;">
-            <h2 class="section-title" style="margin-bottom: 20px; font-size: 1.2rem; color: var(--text-muted); letter-spacing: 1px;">TOOLS & TECHNOLOGIES</h2>
-            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
-                <div class="card" style="padding: 20px; text-align: left;">
-                    <h3 style="color: var(--primary-color); margin-bottom: 8px;">Python</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Primary language used for algorithms, machine learning, and data science implementations.</p>
-                </div>
-                <div class="card" style="padding: 20px; text-align: left;">
-                    <h3 style="color: var(--primary-color); margin-bottom: 8px;">Pandas</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">High-performance, easy-to-use data structures and data analysis tool for Python.</p>
-                </div>
-                <div class="card" style="padding: 20px; text-align: left;">
-                    <h3 style="color: var(--primary-color); margin-bottom: 8px;">Matplotlib</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Comprehensive library for creating static, animated, and interactive visualizations.</p>
-                </div>
-                <div class="card" style="padding: 20px; text-align: left;">
-                    <h3 style="color: var(--primary-color); margin-bottom: 8px;">Scikit-Learn</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Simple and efficient tools for predictive data analysis and machine learning.</p>
-                </div>
-                <div class="card" style="padding: 20px; text-align: left;">
-                    <h3 style="color: var(--primary-color); margin-bottom: 8px;">Seaborn</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Data visualization library based on matplotlib that provides a high-level interface.</p>
-                </div>
-                <div class="card" style="padding: 20px; text-align: left;">
-                    <h3 style="color: var(--primary-color); margin-bottom: 8px;">Jupyter</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Interactive environment used to write and execute code, and visualize data directly.</p>
-                </div>
-                <div class="card" style="padding: 20px; text-align: left; border: 1px solid var(--primary-color);">
-                    <h3 style="color: var(--primary-color); margin-bottom: 8px;">Code Editor</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Built-in interactive Python sandbox to write, execute, and test code snippets directly.</p>
-                </div>
-                <div class="card" style="padding: 20px; text-align: left;">
-                    <h3 style="color: var(--primary-color); margin-bottom: 8px;">SQLAlchemy</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Database toolkit used for securely storing and managing experiment logs.</p>
-                </div>
-            </div>
-        </section>
-
-
+    <div class="container" style="padding-top: 48px; padding-bottom: 80px;">
+        <!-- Header Banner -->
+        <div style="margin-bottom: 36px; text-align: left;">
+            <span class="gamma-badge">✦ TECHNOLOGY STACK</span>
+            <h1 style="font-size: 2.8rem; margin: 12px 0 8px;">Tools &amp; Frameworks <span class="sparkle-icon">✦</span></h1>
+            <p style="color: var(--gamma-body); max-width: 680px; font-size: 1.05rem;">
+                Core libraries, computational runtimes, and algorithmic toolkits utilized across the Data Science Subject Laboratory curriculum at Mohan Babu University.
+            </p>
         </div>
 
-    <!-- Add Experiment Modal -->
-    <div id="addModal" class="modal">
-        <div class="modal-content large">
-            <span class="close-modal" onclick="closeModal('addModal')">&times;</span>
-            <h2 style="margin-bottom: 20px; color: var(--primary-color);">Add New Experiment</h2>
+        <!-- Tool Cards Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px;">
             
-            <form id="addExperimentForm">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
-                    <div class="form-group">
-                        <label>Experiment Number</label>
-                        <input type="text" id="expNum" class="form-control" required placeholder="e.g. EXPERIMENT 03">
-                    </div>
-                    <div class="form-group">
-                        <label>Experiment Title</label>
-                        <input type="text" id="expTitle" class="form-control" required>
-                    </div>
+            <div class="gamma-card">
+                <div class="gamma-slide-header sky-theme" style="padding: 14px 18px; margin-bottom: 14px;">
+                    <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Core Language</span>
+                    <h3 style="font-size: 1.25rem;">Python 3.10+</h3>
                 </div>
-                
-                <div class="form-group">
-                    <label>Short Description</label>
-                    <input type="text" id="expDesc" class="form-control" required>
+                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px;">
+                    The primary programming language utilized for scientific scripting, algorithmic problem-solving, and machine learning pipelines.
+                </p>
+                <div style="display: flex; gap: 8px;">
+                    <span class="tech-tag">Syntax</span>
+                    <span class="tech-tag">OOP</span>
+                    <span class="tech-tag">Standard Lib</span>
                 </div>
+            </div>
 
-                <div class="form-group">
-                    <label>Aim</label>
-                    <textarea id="expAim" class="form-control" required></textarea>
+            <div class="gamma-card">
+                <div class="gamma-slide-header coral-theme" style="padding: 14px 18px; margin-bottom: 14px;">
+                    <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Data Wrangling</span>
+                    <h3 style="font-size: 1.25rem;">Pandas</h3>
                 </div>
+                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px;">
+                    High-performance tabular data structures (DataFrames &amp; Series), vectorized filtering, merging, missing value imputation, and grouping.
+                </p>
+                <div style="display: flex; gap: 8px;">
+                    <span class="tech-tag">DataFrames</span>
+                    <span class="tech-tag">ETL</span>
+                </div>
+            </div>
 
-                <div class="form-group">
-                    <label>Objective</label>
-                    <textarea id="expObj" class="form-control" required></textarea>
+            <div class="gamma-card">
+                <div class="gamma-slide-header purple-theme" style="padding: 14px 18px; margin-bottom: 14px;">
+                    <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Numerical Computing</span>
+                    <h3 style="font-size: 1.25rem;">NumPy</h3>
                 </div>
+                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px;">
+                    N-dimensional array manipulations, linear algebra, Fourier transforms, random sampling, and rapid mathematical broadcasting.
+                </p>
+                <div style="display: flex; gap: 8px;">
+                    <span class="tech-tag">Matrices</span>
+                    <span class="tech-tag">Linear Algebra</span>
+                </div>
+            </div>
 
-                <div class="form-group">
-                    <label>Theory</label>
-                    <textarea id="expTheory" class="form-control" required></textarea>
+            <div class="gamma-card">
+                <div class="gamma-slide-header sunset-theme" style="padding: 14px 18px; margin-bottom: 14px;">
+                    <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Visualization</span>
+                    <h3 style="font-size: 1.25rem;">Matplotlib</h3>
                 </div>
+                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px;">
+                    Comprehensive 2D plotting library generating publication-grade histograms, scatterplots, error bars, bar charts, and contours.
+                </p>
+                <div style="display: flex; gap: 8px;">
+                    <span class="tech-tag">2D Plots</span>
+                    <span class="tech-tag">Subplots</span>
+                </div>
+            </div>
 
-                <div class="form-group">
-                    <label>Requirements</label>
-                    <input type="text" id="expReq" class="form-control" required>
+            <div class="gamma-card">
+                <div class="gamma-slide-header coral-theme" style="padding: 14px 18px; margin-bottom: 14px;">
+                    <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Statistical Graphics</span>
+                    <h3 style="font-size: 1.25rem;">Seaborn</h3>
                 </div>
+                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px;">
+                    High-level statistical visualization library offering attractive default themes, heatmaps, violin plots, and correlation matrices.
+                </p>
+                <div style="display: flex; gap: 8px;">
+                    <span class="tech-tag">Heatmaps</span>
+                    <span class="tech-tag">Distributions</span>
+                </div>
+            </div>
 
-                <div class="form-group">
-                    <label>Procedure</label>
-                    <textarea id="expProc" class="form-control" required></textarea>
+            <div class="gamma-card">
+                <div class="gamma-slide-header sky-theme" style="padding: 14px 18px; margin-bottom: 14px;">
+                    <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Machine Learning</span>
+                    <h3 style="font-size: 1.25rem;">Scikit-Learn</h3>
                 </div>
+                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px;">
+                    Predictive modeling tools implementing classification, regression, clustering (K-Means), dimensionality reduction (PCA), and metrics.
+                </p>
+                <div style="display: flex; gap: 8px;">
+                    <span class="tech-tag">Classification</span>
+                    <span class="tech-tag">Regression</span>
+                </div>
+            </div>
 
-                <div class="form-group">
-                    <label>Python Code</label>
-                    <textarea id="expCode" class="form-control" style="font-family: monospace;" required></textarea>
+            <div class="gamma-card">
+                <div class="gamma-slide-header purple-theme" style="padding: 14px 18px; margin-bottom: 14px;">
+                    <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Interactive Notebooks</span>
+                    <h3 style="font-size: 1.25rem;">Jupyter</h3>
                 </div>
+                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px;">
+                    Live browser notebooks combining executable code cells, markdown documentation, mathematical LaTeX equations, and inline graphics.
+                </p>
+                <div style="display: flex; gap: 8px;">
+                    <span class="tech-tag">IPython</span>
+                    <span class="tech-tag">Notebooks</span>
+                </div>
+            </div>
 
-                <div class="form-group">
-                    <label>Result</label>
-                    <textarea id="expResult" class="form-control" required></textarea>
+            <div class="gamma-card">
+                <div class="gamma-slide-header sunset-theme" style="padding: 14px 18px; margin-bottom: 14px;">
+                    <span style="font-size: 0.72rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Live Execution</span>
+                    <h3 style="font-size: 1.25rem;">Interactive Sandbox</h3>
                 </div>
+                <p style="color: var(--gamma-body); font-size: 0.94rem; margin-bottom: 16px;">
+                    Integrated in-browser code editor with simulated output terminal to test data transformations and algorithms with zero setup.
+                </p>
+                <div style="display: flex; gap: 8px;">
+                    <a href="editor.html" class="btn-outline" style="font-size: 0.82rem; padding: 4px 12px;">Launch Sandbox →</a>
+                </div>
+            </div>
 
-                <div style="display: flex; justify-content: flex-end; gap: 15px; margin-top: 20px;">
-                    <button type="button" class="btn-outline" onclick="closeModal('addModal')">Cancel</button>
-                    <button type="submit" class="btn-primary">Save Experiment</button>
-                </div>
-            </form>
         </div>
     </div>
 
+    <!-- Scripts -->
     <script src="js/config.js"></script>
     <script src="js/experiments.js"></script>
     <script src="js/main.js"></script>
-
-    <!-- Code Editor Setup -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.3/ace.js"></script>
-    <script>
-        // Code Editor
-        document.addEventListener('DOMContentLoaded', () => {
-            if(document.getElementById('code-editor')) {
-                var editor = ace.edit("code-editor");
-                editor.setTheme("ace/theme/dracula");
-                editor.session.setMode("ace/mode/python");
-                editor.setValue("# Write your Python code here\nimport pandas as pd\nimport numpy as np\n\nprint('Data Science Subject Laboratory Sandbox Initialized!')\n\n# Example:\n# df = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})\n# print(df.head())\n");
-                editor.clearSelection();
-                editor.setFontSize("15px");
-                
-                window.runCode = function() {
-                    const output = document.getElementById('code-output');
-                    output.innerHTML += '<br><br>> Running script...<br>> [Output] execution simulated successfully in local browser!<br>> Data Science Subject Laboratory Sandbox Initialized!';
-                    output.scrollTop = output.scrollHeight;
-                    
-                    // Flash the terminal background to show it did something
-                    output.style.backgroundColor = '#1e293b';
-                    setTimeout(() => {
-                        output.style.backgroundColor = '#0F172A';
-                    }, 200);
-                }
-            }
-        });
-    </script>
-
-    <!-- Chart.js Setup -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        let growthChartInstance = null;
-
-        function initChart() {
-            const canvas = document.getElementById('growthChart');
-            if (!canvas) return;
-            const ctx = canvas.getContext('2d');
-            
-            // If chart exists, destroy it so we can re-animate it from scratch
-            if (growthChartInstance) {
-                growthChartInstance.destroy();
-            }
-
-            // Gradient for the line
-            const gradient = ctx.createLinearGradient(0, 0, 0, 200);
-            gradient.addColorStop(0, 'rgba(180, 133, 246, 0.5)'); // Lavender
-            gradient.addColorStop(1, 'rgba(180, 133, 246, 0.0)'); // Transparent
-
-            growthChartInstance = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: ['Sem 1', 'Sem 2', 'Sem 3', 'Sem 4'],
-                    datasets: [{
-                        label: 'Overall Performance',
-                        data: [72, 78, 85, 92], // Simulating growth
-                        borderColor: '#111111', // Black line
-                        backgroundColor: gradient,
-                        borderWidth: 3,
-                        pointBackgroundColor: '#B485F6', // Lavender point
-                        pointBorderColor: '#111111', // Black border
-                        pointBorderWidth: 2,
-                        pointRadius: 5,
-                        pointHoverRadius: 7,
-                        fill: true,
-                        tension: 0.4 // Smooth curve
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    animation: {
-                        duration: 1500,
-                        easing: 'easeOutQuart'
-                    },
-                    plugins: {
-                        legend: { display: false },
-                        tooltip: {
-                            backgroundColor: '#FAF9F6',
-                            titleColor: '#211A20',
-                            bodyColor: '#211A20',
-                            borderColor: '#B5D13E',
-                            borderWidth: 1,
-                            padding: 10,
-                            displayColors: false,
-                            callbacks: {
-                                label: function(context) {
-                                    return context.parsed.y + ' Marks';
-                                }
-                            }
-                        }
-                    },
-                    scales: {
-                        y: {
-                            beginAtZero: false,
-                            min: 60,
-                            max: 100,
-                            grid: {
-                                color: 'rgba(33, 26, 32, 0.05)',
-                                drawBorder: false,
-                            },
-                            ticks: {
-                                color: '#645561',
-                                stepSize: 10
-                            }
-                        },
-                        x: {
-                            grid: {
-                                display: false,
-                                drawBorder: false,
-                            },
-                            ticks: {
-                                color: '#645561'
-                            }
-                        }
-                    }
-                }
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', initChart);
-
-        // Click handler to re-trigger the animation
-        window.animateChart = function() {
-            initChart();
-        };
-    </script>
 </body>
 </html>
