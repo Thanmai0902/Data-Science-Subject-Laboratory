@@ -35,13 +35,12 @@ An interactive, multi-page web platform and digital lab notebook developed for t
   - Built-in interactive code editor on each experiment page to execute and test experiment scripts.
   - Direct integration with the official repository [Thanmai0902/pandas_data_formats](https://github.com/Thanmai0902/pandas_data_formats) on every experiment.
 
-- **📁 Data Science Projects (`projects.html`)**:
-  - Comprehensive laboratory project portfolio mapped directly to curriculum modules:
-    - **DS Program 1 (Module 01)**: Multi-Format Data Ingestion & Schema Normalizer (CSV, JSON, XML, Parquet, Excel).
-    - **DS Program 2 (Module 02)**: Advanced Missing Value Imputation & Outlier Handling Pipeline.
-    - **DS Program 3 (Module 03)**: Multi-Panel Statistical & Exploratory Visualization Dashboard.
-    - **DS Program 4 (Module 04)**: Automated Hypothesis Testing & Parametric/Non-Parametric Statistical Suite.
-  - Full code implementations, copy buttons, terminal/expected outputs, and links to the [pandas_data_formats](https://github.com/Thanmai0902/pandas_data_formats) repository.
+- **📁 Featured Web & AI Projects (`projects.html`)**:
+  - Production-grade full-stack web applications and AI platforms developed by **S. Thanmai**:
+    - **[Cine-AI-Scene](https://github.com/Thanmai0902/cine-ai-scene)**: AI-powered cinematic discovery & real-time seat reservation platform with Supabase Realtime channel synchronization.
+    - **[Cine-Genius-Booking](https://github.com/Thanmai0902/cine-genius-booking)**: Next-gen multiplex movie ticketing suite with full Supabase authentication, showtime scheduling, and trailer previews.
+    - **[Scoop-Sweet-Suite](https://github.com/Thanmai0902/scoop-sweet-suite)**: Artisanal gourmet ice cream storefront featuring PostgreSQL Realtime inventory change tracking, persistent cart, and dietary search.
+  - Complete architectural breakdowns, core deliverables, code snippets, and official repository links.
 
 - **🎨 Modern Visual Design**:
   - Minimalist Lavender aesthetic with fluid animated mesh gradient background.
@@ -58,7 +57,7 @@ An interactive, multi-page web platform and digital lab notebook developed for t
 ├── modules.html          # Course Modules with PDFs
 ├── experiments.html      # 21 Syllabus Experiments Catalog
 ├── experiment.html       # Individual Experiment View & Code Runner
-├── projects.html         # Data Science Programs (DS 1, 2, 3, 4)
+├── projects.html         # Featured Projects Showcase (Cine-AI, Cine-Genius, Scoop-Sweet)
 ├── css/
 │   └── style.css         # Styling & Animated Mesh Gradient
 ├── js/
