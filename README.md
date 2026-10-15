@@ -18,11 +18,12 @@ An interactive, multi-page web platform and digital lab notebook developed for t
 
 
 - **📚 Course Modules (`modules.html`)**:
-  - Comprehensive 4-module curriculum with permanently embedded 10-chapter study materials:
+  - Comprehensive 5-module curriculum with permanently embedded 10-chapter study materials:
     - **Module 01**: Introduction to Data Science
     - **Module 02**: Data Extraction
     - **Module 03**: Data Visualization
     - **Module 04**: Statistical Thinking
+    - **Module 05**: Time Series Analysis and Predictive Modeling
   - One-click PDF download for each module.
 
 - **🔬 Lab Experiments (`experiments.html` & `experiment.html`)**:
@@ -60,7 +61,8 @@ An interactive, multi-page web platform and digital lab notebook developed for t
 │       ├── module1.pdf
 │       ├── module2.pdf
 │       ├── module3.pdf
-│       └── module4.pdf
+│       ├── module4.pdf
+│       └── module5.pdf
 ├── backend/
 │   ├── database.py       # Database connection setup
 │   ├── main.py           # FastAPI server endpoints
