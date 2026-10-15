@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Modules | Data Science Digital Library</title>
+    <title>Course Curriculum Modules | Data Science Digital Library</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -35,128 +35,120 @@
         </div>
     </header>
 
-    <div class="container" style="padding-top: 48px; padding-bottom: 80px;">
+    <div class="container" style="padding-top: 48px; padding-bottom: 90px;">
         <!-- Header Banner -->
         <div style="margin-bottom: 36px; text-align: left;">
-            <span class="gamma-badge">✦ OFFICIAL SYLLABUS</span>
+            <span class="gamma-badge">✦ OFFICIAL SYLLABUS &amp; STUDY MATERIALS</span>
             <h1 style="font-size: 2.8rem; margin: 12px 0 8px;">Course Curriculum Modules <span class="sparkle-icon">✦</span></h1>
-            <p style="color: var(--gamma-body); max-width: 720px; font-size: 1.05rem;">
-                Five comprehensive curriculum modules comprising 10-chapter study materials embedded directly below each section for uninterrupted study, complete with one-click PDF download capabilities.
+            <p style="color: var(--gamma-body); max-width: 760px; font-size: 1.05rem;">
+                Explore the official Course Handout Outline (CHO) and detailed 10-chapter curriculum modules. Select any module from the navigation panel on the left to preview its description, structured sub-topics, and embedded PDF reader.
             </p>
         </div>
 
-        <div style="display: flex; flex-direction: column; gap: 40px;">
+        <!-- Master-Detail Split Layout -->
+        <div class="modules-layout">
 
-            <!-- MODULE 01 -->
-            <div class="gamma-card">
-                <div class="gamma-slide-header sky-theme">
-                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px;">
-                        <div>
-                            <span style="font-size: 0.76rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Curriculum Module 01</span>
-                            <h3>Introduction to Data Science</h3>
-                            <p>Foundations, lifecycle stages, computational workflows, and exploratory philosophy.</p>
-                        </div>
-                        <a href="assets/pdfs/module1.pdf" download class="gamma-pill-btn" style="color: var(--gamma-blue);">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                            Download PDF (10 Pages) →
+            <!-- LEFT SIDEBAR: Module Headings Navigation with CHO above Module 1 -->
+            <aside class="modules-sidebar" aria-label="Curriculum Modules Navigation">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px; padding: 0 4px;">
+                    <span style="font-size: 0.76rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: var(--gamma-navy);">Curriculum Navigation</span>
+                    <span class="gamma-badge" style="font-size: 0.7rem; padding: 2px 10px;">CHO + 4 Modules</span>
+                </div>
+
+                <!-- 1. CHO Tab (Placed Above Module 1 with all modules and subtopics) -->
+                <div class="module-nav-item cho-nav-item active" id="tab-cho" onclick="switchModule('cho')" tabindex="0" role="button" aria-label="Course Handout Outline">
+                    <div class="module-nav-badge">
+                        <span>📑</span>
+                        <span>Master Syllabus</span>
+                    </div>
+                    <div class="module-nav-title">Course Handout Outline (CHO)</div>
+                    <div class="module-nav-desc">Comprehensive master syllabus covering Modules 01, 02, 04, and 05 with complete sub-topics and learning outcomes.</div>
+                </div>
+
+                <!-- 2. Curriculum Module 01 -->
+                <div class="module-nav-item" id="tab-mod1" onclick="switchModule('mod1')" tabindex="0" role="button" aria-label="Curriculum Module 01">
+                    <div class="module-nav-badge">
+                        <span>📘</span>
+                        <span>Curriculum Module 01</span>
+                    </div>
+                    <div class="module-nav-title">Introduction to Data Science</div>
+                    <div class="module-nav-desc">Foundations, lifecycle stages, computational workflows, data engineering basics, and ethics.</div>
+                </div>
+
+                <!-- 3. Curriculum Module 02 -->
+                <div class="module-nav-item" id="tab-mod2" onclick="switchModule('mod2')" tabindex="0" role="button" aria-label="Curriculum Module 02">
+                    <div class="module-nav-badge">
+                        <span>🔍</span>
+                        <span>Curriculum Module 02</span>
+                    </div>
+                    <div class="module-nav-title">Data Extraction &amp; Wrangling</div>
+                    <div class="module-nav-desc">Web scraping, RESTful APIs, JSON/XML parsing, SQL databases, and data cleaning techniques.</div>
+                </div>
+
+                <!-- 4. Curriculum Module 04 -->
+                <div class="module-nav-item" id="tab-mod4" onclick="switchModule('mod4')" tabindex="0" role="button" aria-label="Curriculum Module 04">
+                    <div class="module-nav-badge">
+                        <span>📈</span>
+                        <span>Curriculum Module 04</span>
+                    </div>
+                    <div class="module-nav-title">Statistical Thinking &amp; Inference</div>
+                    <div class="module-nav-desc">Probability distributions, CLT, hypothesis testing, t-tests, ANOVA, and Bayesian inference.</div>
+                </div>
+
+                <!-- 5. Curriculum Module 05 -->
+                <div class="module-nav-item" id="tab-mod5" onclick="switchModule('mod5')" tabindex="0" role="button" aria-label="Curriculum Module 05">
+                    <div class="module-nav-badge">
+                        <span>⏱️</span>
+                        <span>Curriculum Module 05</span>
+                    </div>
+                    <div class="module-nav-title">Time Series Analysis and Predictive Modeling</div>
+                    <div class="module-nav-desc">Decomposition, ADF stationarity, ARIMA/SARIMA, Holt-Winters, and ML forecasting.</div>
+                </div>
+            </aside>
+
+            <!-- RIGHT VIEWER PANE: Beside all module headings -->
+            <main class="module-viewer-pane" id="moduleViewerContainer">
+
+                <!-- Header: Title, Description, and Download Button -->
+                <div class="module-viewer-header">
+                    <div style="flex: 1; min-width: 280px;">
+                        <span id="moduleBadge" class="gamma-badge" style="margin-bottom: 8px;">✦ MASTER COURSE HANDOUT OUTLINE (CHO)</span>
+                        <h2 id="moduleTitle" style="font-size: 2.1rem; margin: 8px 0 10px; color: var(--gamma-navy); font-family: 'Playfair Display', serif;">Course Handout Outline (CHO)</h2>
+                        <p id="moduleDesc" style="color: var(--gamma-body); font-size: 1rem; line-height: 1.6; max-width: 760px;">
+                            Master Course Handout Outline covering the complete academic syllabus across Modules 01, 02, 04, and 05. Includes detailed sub-topic breakdowns, practical laboratory guidelines, and course evaluation criteria approved by Faculty Mentor S.Bosubabu.
+                        </p>
+                    </div>
+
+                    <!-- Action Buttons: Download PDF & Open Fullscreen -->
+                    <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                        <a id="moduleDownloadBtn" href="assets/pdfs/cho.pdf" download="Course_Handout_Outline_CHO.pdf" class="gamma-pill-btn" style="background: var(--gamma-blue); color: #FFFFFF; font-weight: 700; box-shadow: 0 4px 14px rgba(37,99,235,0.25);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            <span id="downloadBtnText">Download PDF</span>
+                        </a>
+                        <a id="moduleOpenTabBtn" href="assets/pdfs/cho.pdf" target="_blank" class="gamma-pill-btn" style="color: var(--gamma-navy);" title="Open PDF in new tab">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            Fullscreen ↗
                         </a>
                     </div>
                 </div>
 
-                <!-- 10-Page Study Matter Embedded Viewer -->
-                <div style="width: 100%; height: 750px; border: 1px solid var(--card-border); border-radius: 16px; overflow: hidden; background: #FFFFFF; box-shadow: 0 4px 14px rgba(12,33,56,0.04);">
-                    <embed src="assets/pdfs/module1.pdf#toolbar=0&navpanes=0&scrollbar=1" type="application/pdf" width="100%" height="100%">
+                <!-- Dynamic Subtopics & Overview Container -->
+                <div id="moduleSubtopicsSection" class="cho-subtopics-box">
+                    <!-- Populated dynamically via switchModule() -->
                 </div>
-            </div>
 
-            <!-- MODULE 02 -->
-            <div class="gamma-card">
-                <div class="gamma-slide-header coral-theme">
-                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px;">
-                        <div>
-                            <span style="font-size: 0.76rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Curriculum Module 02</span>
-                            <h3>Data Extraction &amp; Wrangling</h3>
-                            <p>Data harvesting, REST APIs, JSON/CSV parsing, cleaning missing entries, and outlier management.</p>
-                        </div>
-                        <a href="assets/pdfs/module2.pdf" download class="gamma-pill-btn" style="color: var(--gamma-blue);">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                            Download PDF (10 Pages) →
-                        </a>
+                <!-- Embedded PDF Viewer -->
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--gamma-muted);">Embedded Document Viewer</span>
+                        <span style="font-size: 0.78rem; color: var(--gamma-muted);">Scroll inside viewer to read full document</span>
+                    </div>
+                    <div class="pdf-frame-wrapper" id="pdfWrapper">
+                        <embed id="moduleEmbedPdf" src="assets/pdfs/cho.pdf#toolbar=1&navpanes=1" type="application/pdf" width="100%" height="100%">
                     </div>
                 </div>
 
-                <!-- 10-Page Study Matter Embedded Viewer -->
-                <div style="width: 100%; height: 750px; border: 1px solid var(--card-border); border-radius: 16px; overflow: hidden; background: #FFFFFF; box-shadow: 0 4px 14px rgba(12,33,56,0.04);">
-                    <embed src="assets/pdfs/module2.pdf#toolbar=0&navpanes=0&scrollbar=1" type="application/pdf" width="100%" height="100%">
-                </div>
-            </div>
-
-            <!-- MODULE 03 -->
-            <div class="gamma-card">
-                <div class="gamma-slide-header sunset-theme">
-                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px;">
-                        <div>
-                            <span style="font-size: 0.76rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Curriculum Module 03</span>
-                            <h3>Data Visualization &amp; Storytelling</h3>
-                            <p>Multivariate charting, heatmap correlations, trend analytics, and publication graphics.</p>
-                        </div>
-                        <a href="assets/pdfs/module3.pdf" download class="gamma-pill-btn" style="color: var(--gamma-blue);">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                            Download PDF (10 Pages) →
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 10-Page Study Matter Embedded Viewer -->
-                <div style="width: 100%; height: 750px; border: 1px solid var(--card-border); border-radius: 16px; overflow: hidden; background: #FFFFFF; box-shadow: 0 4px 14px rgba(12,33,56,0.04);">
-                    <embed src="assets/pdfs/module3.pdf#toolbar=0&navpanes=0&scrollbar=1" type="application/pdf" width="100%" height="100%">
-                </div>
-            </div>
-
-            <!-- MODULE 04 -->
-            <div class="gamma-card">
-                <div class="gamma-slide-header purple-theme">
-                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px;">
-                        <div>
-                            <span style="font-size: 0.76rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Curriculum Module 04</span>
-                            <h3>Statistical Thinking &amp; Inference</h3>
-                            <p>Probability distributions, hypothesis testing (Z/t-tests), confidence intervals, and variance evaluation.</p>
-                        </div>
-                        <a href="assets/pdfs/module4.pdf" download class="gamma-pill-btn" style="color: var(--gamma-blue);">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                            Download PDF (10 Pages) →
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 10-Page Study Matter Embedded Viewer -->
-                <div style="width: 100%; height: 750px; border: 1px solid var(--card-border); border-radius: 16px; overflow: hidden; background: #FFFFFF; box-shadow: 0 4px 14px rgba(12,33,56,0.04);">
-                    <embed src="assets/pdfs/module4.pdf#toolbar=0&navpanes=0&scrollbar=1" type="application/pdf" width="100%" height="100%">
-                </div>
-            </div>
-
-            <!-- MODULE 05 -->
-            <div class="gamma-card">
-                <div class="gamma-slide-header coral-theme">
-                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px;">
-                        <div>
-                            <span style="font-size: 0.76rem; letter-spacing: 1px; font-weight: 700; text-transform: uppercase;">Curriculum Module 05</span>
-                            <h3>Time Series Analysis and Predictive Modeling</h3>
-                            <p>Temporal decomposition, stationarity testing, ARIMA/SARIMA, Holt-Winters exponential smoothing, and predictive ML forecasting.</p>
-                        </div>
-                        <a href="assets/pdfs/module5.pdf" download class="gamma-pill-btn" style="color: var(--gamma-blue);">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                            Download PDF (10 Chapters) →
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 10-Page Study Matter Embedded Viewer -->
-                <div style="width: 100%; height: 750px; border: 1px solid var(--card-border); border-radius: 16px; overflow: hidden; background: #FFFFFF; box-shadow: 0 4px 14px rgba(12,33,56,0.04);">
-                    <embed src="assets/pdfs/module5.pdf#toolbar=0&navpanes=0&scrollbar=1" type="application/pdf" width="100%" height="100%">
-                </div>
-            </div>
-
+            </main>
         </div>
     </div>
 
@@ -164,5 +156,279 @@
     <script src="js/config.js"></script>
     <script src="js/experiments.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Master-Detail Switcher Script -->
+    <script>
+        const MODULES_DATA = {
+            cho: {
+                badge: "✦ MASTER COURSE HANDOUT OUTLINE (CHO)",
+                title: "Course Handout Outline (CHO)",
+                desc: "Master Course Handout Outline covering the complete academic syllabus across Modules 01, 02, 04, and 05. Includes detailed sub-topic breakdowns, practical laboratory guidelines, and course evaluation criteria approved by Faculty Mentor S.Bosubabu.",
+                pdf: "assets/pdfs/cho.pdf",
+                downloadName: "Course_Handout_Outline_CHO.pdf",
+                btnText: "Download CHO PDF →",
+                isCho: true
+            },
+            mod1: {
+                badge: "✦ CURRICULUM MODULE 01",
+                title: "Curriculum Module 01: Introduction to Data Science",
+                desc: "Foundational paradigms, data science lifecycle stages, computational workflows, tool ecosystems, data engineering basics, and exploratory philosophy. Includes 10 exhaustive chapters with hands-on labs.",
+                pdf: "assets/pdfs/module1.pdf",
+                downloadName: "Curriculum_Module_01_Introduction_to_Data_Science.pdf",
+                btnText: "Download PDF (10 Chapters) →",
+                isCho: false,
+                chapters: [
+                    "The Evolution of Data Science (Classical Statistics to AI)",
+                    "The Data Science Lifecycle (End-to-End Workflow)",
+                    "Roles in Data Science (DS vs DE vs MLE vs Analyst)",
+                    "Tools and Technologies (Python, NumPy, Pandas, Jupyter)",
+                    "Ethics and Privacy (GDPR, Bias, and Governance)",
+                    "Data Engineering Basics (ETL, Parquet, and Storage)",
+                    "Applications in Industry (Healthcare, Finance, Retail)",
+                    "Traditional Programming vs Data Science Heuristics",
+                    "Environment Setup & Scientific Computing",
+                    "Future Horizons in Data Science & Machine Intelligence"
+                ]
+            },
+            mod2: {
+                badge: "✦ CURRICULUM MODULE 02",
+                title: "Curriculum Module 02: Data Extraction & Wrangling",
+                desc: "Data harvesting, web scraping concepts, RESTful API consumption, schema normalisation, missing value imputation, and pipeline orchestration. Includes 10 exhaustive chapters with hands-on labs.",
+                pdf: "assets/pdfs/module2.pdf",
+                downloadName: "Curriculum_Module_02_Data_Extraction_and_Wrangling.pdf",
+                btnText: "Download PDF (10 Chapters) →",
+                isCho: false,
+                chapters: [
+                    "Introduction to Data Sources & Data Architecture",
+                    "Web Scraping Concepts & DOM Navigation",
+                    "HTML & CSS Selectors for Targeting Data",
+                    "Python Requests & BeautifulSoup Extraction",
+                    "Working with RESTful APIs & HTTP Handshakes",
+                    "Authentication, API Keys & OAuth 2.0 Tokens",
+                    "Parsing JSON, XML & Semi-Structured Data",
+                    "SQL Database Connections & Pipeline Ingestion",
+                    "Pagination, Rate Limiting & Robust Harvesting",
+                    "Data Wrangling Best Practices & Imputation"
+                ]
+            },
+            mod4: {
+                badge: "✦ CURRICULUM MODULE 04",
+                title: "Curriculum Module 04: Statistical Thinking & Inference",
+                desc: "Probability theory, random variables, sampling distributions, Central Limit Theorem, hypothesis testing, ANOVA, and Bayesian reasoning. Includes 10 exhaustive chapters with hands-on labs.",
+                pdf: "assets/pdfs/module4.pdf",
+                downloadName: "Curriculum_Module_04_Statistical_Thinking_and_Inference.pdf",
+                btnText: "Download PDF (10 Chapters) →",
+                isCho: false,
+                chapters: [
+                    "Introduction to Axiomatic Probability Theory",
+                    "Descriptive Statistics & Exploratory Metrics",
+                    "Continuous & Discrete Probability Distributions",
+                    "Central Limit Theorem & Sampling Distributions",
+                    "Hypothesis Testing Framework (Null vs Alternative)",
+                    "Parametric Testing: t-Tests and One-Way ANOVA",
+                    "P-Values, Effect Sizes & Statistical Power",
+                    "Correlation vs Causation & Confounding Factors",
+                    "Confidence Intervals & Bootstrap Resampling",
+                    "Bayesian Statistical Inference & Posterior Updates"
+                ]
+            },
+            mod5: {
+                badge: "✦ CURRICULUM MODULE 05",
+                title: "Curriculum Module 05: Time Series Analysis and Predictive Modeling",
+                desc: "Temporal signal decomposition, stationarity, stochastic processes, ARIMA/SARIMA, Holt-Winters exponential smoothing, deep forecasting (LSTM), and validation metrics. Includes 10 exhaustive chapters with hands-on labs.",
+                pdf: "assets/pdfs/module5.pdf",
+                downloadName: "Curriculum_Module_05_Time_Series_Analysis_and_Predictive_Modeling.pdf",
+                btnText: "Download PDF (10 Chapters) →",
+                isCho: false,
+                chapters: [
+                    "Introduction to Time Series Data & Temporal Fundamentals",
+                    "Stationarity, Unit Root Tests & ADF Methodology",
+                    "Autocorrelation (ACF) and Partial Autocorrelation (PACF)",
+                    "Autoregressive (AR) and Moving Average (MA) Processes",
+                    "ARIMA and Seasonal ARIMA (SARIMA) Architectures",
+                    "Exponential Smoothing & Holt-Winters Forecasting",
+                    "Feature Engineering for Temporal Data (Lags & Rolling Windows)",
+                    "Machine Learning for Forecasting (XGBoost & Prophet)",
+                    "Deep Learning for Time Series (RNN, LSTM & GRU)",
+                    "Model Validation, Forecast Metrics (MAE/RMSE/MAPE) & Deployment"
+                ]
+            }
+        };
+
+        const CHO_SUBTOPICS_DATA = [
+            {
+                code: "Curriculum Module 01",
+                title: "Introduction to Data Science",
+                theme: "sky",
+                topics: [
+                    "The Evolution of Data Science (Classical to Modern)",
+                    "The Data Science Lifecycle Stages",
+                    "Roles in Data Science (DS, DE, MLE, BI)",
+                    "Tools and Technologies (Python, Jupyter, Pandas)",
+                    "Ethics, Privacy & Data Governance",
+                    "Data Engineering Basics & Schemas",
+                    "Applications in Modern Industry",
+                    "Traditional Programming vs Data Science",
+                    "Environment Setup & Reproducibility",
+                    "Future Horizons in Data Science"
+                ]
+            },
+            {
+                code: "Curriculum Module 02",
+                title: "Data Extraction & Wrangling",
+                theme: "coral",
+                topics: [
+                    "Introduction to Heterogeneous Data Sources",
+                    "Web Scraping Concepts & DOM Parsing",
+                    "HTML & CSS Selectors",
+                    "Python Requests & BeautifulSoup Extraction",
+                    "RESTful APIs & JSON Consumption",
+                    "Authentication, Headers & API Keys",
+                    "Parsing JSON, XML & Nested Schemas",
+                    "SQL Database Connections & Alchemy",
+                    "Pagination & Rate Limiting Controls",
+                    "Data Wrangling Best Practices & Imputation"
+                ]
+            },
+            {
+                code: "Curriculum Module 04",
+                title: "Statistical Thinking & Inference",
+                theme: "purple",
+                topics: [
+                    "Axiomatic Probability Theory",
+                    "Descriptive Statistics & Spread Metrics",
+                    "Discrete & Continuous Distributions",
+                    "Central Limit Theorem & Standard Error",
+                    "Hypothesis Testing Framework (Z & t)",
+                    "Parametric Tests: t-Tests and ANOVA",
+                    "P-Values, Significance & Effect Sizes",
+                    "Correlation vs Causation",
+                    "Confidence Intervals & Bootstrap Resampling",
+                    "Bayesian Statistical Inference"
+                ]
+            },
+            {
+                code: "Curriculum Module 05",
+                title: "Time Series Analysis and Predictive Modeling",
+                theme: "coral",
+                topics: [
+                    "Temporal Data Fundamentals & Characteristics",
+                    "Stationarity, Unit Root & ADF Tests",
+                    "Autocorrelation (ACF) & PACF Diagnostics",
+                    "Autoregressive (AR) & Moving Average (MA)",
+                    "ARIMA & Seasonal SARIMA Parameterization",
+                    "Exponential Smoothing & Holt-Winters",
+                    "Temporal Feature Engineering (Lags/Rolling)",
+                    "Machine Learning Forecasting (XGBoost/Prophet)",
+                    "Deep Learning for Sequences (LSTM/GRU)",
+                    "Validation, Backtesting & Metrics (MAE/RMSE)"
+                ]
+            }
+        ];
+
+        function renderChoSubtopics() {
+            let html = `
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                    <div>
+                        <span style="font-size: 0.78rem; font-weight: 800; letter-spacing: 1px; color: var(--gamma-purple); text-transform: uppercase;">✦ Complete Syllabus Outline</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.35rem; color: var(--gamma-navy); margin: 4px 0 0;">All 4 Curriculum Modules &amp; Sub-Topics</h4>
+                    </div>
+                    <span class="gamma-badge" style="background: #F3E8FF; color: var(--gamma-purple); border-color: rgba(139,92,246,0.3);">Faculty Mentor: S.Bosubabu</span>
+                </div>
+                <div class="cho-modules-grid" style="margin-top: 14px;">
+            `;
+
+            CHO_SUBTOPICS_DATA.forEach(mod => {
+                html += `
+                    <div class="cho-module-card">
+                        <span style="font-size: 0.72rem; font-weight: 700; color: var(--gamma-blue); text-transform: uppercase; letter-spacing: 0.5px;">${mod.code}</span>
+                        <h5 style="font-size: 1rem; color: var(--gamma-navy); font-weight: 700; margin: 4px 0 8px;">${mod.title}</h5>
+                        <ol class="cho-subtopic-list">
+                            ${mod.topics.map(t => `<li>${t}</li>`).join('')}
+                        </ol>
+                    </div>
+                `;
+            });
+
+            html += `</div>`;
+            return html;
+        }
+
+        function renderModuleChapters(modData) {
+            let html = `
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                    <div>
+                        <span style="font-size: 0.78rem; font-weight: 800; letter-spacing: 1px; color: var(--gamma-blue); text-transform: uppercase;">✦ Chapter Syllabus Outline</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.35rem; color: var(--gamma-navy); margin: 4px 0 0;">10 Comprehensive Study Chapters</h4>
+                    </div>
+                    <span class="gamma-badge" style="background: #EFF6FF; color: var(--gamma-blue); border-color: rgba(37,99,235,0.25);">PDF 10-Chapter Manual Included</span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; margin-top: 14px;">
+            `;
+
+            modData.chapters.forEach((chap, idx) => {
+                html += `
+                    <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 10px; padding: 10px 14px; display: flex; align-items: flex-start; gap: 10px;">
+                        <span style="background: #EFF6FF; color: var(--gamma-blue); font-weight: 800; font-size: 0.75rem; border-radius: 6px; padding: 2px 7px; flex-shrink: 0;">${idx + 1}</span>
+                        <span style="font-size: 0.86rem; color: var(--gamma-navy); font-weight: 600; line-height: 1.4;">${chap}</span>
+                    </div>
+                `;
+            });
+
+            html += `</div>`;
+            return html;
+        }
+
+        function switchModule(id) {
+            const data = MODULES_DATA[id];
+            if (!data) return;
+
+            // 1. Update left navigation active tab
+            document.querySelectorAll('.module-nav-item').forEach(el => el.classList.remove('active'));
+            const activeNav = document.getElementById('tab-' + id);
+            if (activeNav) activeNav.classList.add('active');
+
+            // 2. Update Header elements
+            document.getElementById('moduleBadge').textContent = data.badge;
+            document.getElementById('moduleTitle').textContent = data.title;
+            document.getElementById('moduleDesc').textContent = data.desc;
+
+            // 3. Update Download & View Buttons
+            const downloadBtn = document.getElementById('moduleDownloadBtn');
+            downloadBtn.href = data.pdf;
+            downloadBtn.setAttribute('download', data.downloadName);
+            document.getElementById('downloadBtnText').textContent = data.btnText;
+
+            const openTabBtn = document.getElementById('moduleOpenTabBtn');
+            openTabBtn.href = data.pdf;
+
+            // 4. Update Sub-topics Section
+            const subtopicsSection = document.getElementById('moduleSubtopicsSection');
+            if (data.isCho) {
+                subtopicsSection.innerHTML = renderChoSubtopics();
+            } else {
+                subtopicsSection.innerHTML = renderModuleChapters(data);
+            }
+
+            // 5. Update Embedded PDF Viewer cleanly
+            const pdfWrapper = document.getElementById('pdfWrapper');
+            pdfWrapper.innerHTML = `
+                <embed id="moduleEmbedPdf" src="${data.pdf}#toolbar=1&navpanes=1" type="application/pdf" width="100%" height="100%">
+            `;
+
+            // 6. Update URL hash without jump
+            history.replaceState(null, null, '#' + id);
+        }
+
+        // Initialize on DOM load
+        document.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash && MODULES_DATA[hash]) {
+                switchModule(hash);
+            } else {
+                switchModule('cho');
+            }
+        });
+    </script>
 </body>
 </html>

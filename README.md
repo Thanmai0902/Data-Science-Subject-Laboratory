@@ -18,13 +18,14 @@ An interactive, multi-page web platform and digital lab notebook developed for t
 
 
 - **📚 Course Modules (`modules.html`)**:
-  - Comprehensive 5-module curriculum with permanently embedded 10-chapter study materials:
-    - **Module 01**: Introduction to Data Science
-    - **Module 02**: Data Extraction
-    - **Module 03**: Data Visualization
-    - **Module 04**: Statistical Thinking
-    - **Module 05**: Time Series Analysis and Predictive Modeling
-  - One-click PDF download for each module.
+  - Master-detail interactive split layout with left sidebar and embedded viewer on the right.
+  - **Course Handout Outline (CHO)** placed above Module 1, covering the comprehensive syllabus and sub-topics for all modules.
+  - Core curriculum modules:
+    - **Curriculum Module 01**: Introduction to Data Science
+    - **Curriculum Module 02**: Data Extraction & Wrangling
+    - **Curriculum Module 04**: Statistical Thinking & Inference
+    - **Curriculum Module 05**: Time Series Analysis and Predictive Modeling
+  - One-click PDF download buttons and interactive document readers for each module.
 
 - **🔬 Lab Experiments (`experiments.html` & `experiment.html`)**:
   - Browse all laboratory experiments.
@@ -57,12 +58,12 @@ An interactive, multi-page web platform and digital lab notebook developed for t
 ├── assets/
 │   ├── exp1_output.png   # Time Series Output Visualization
 │   ├── exp2_output.png   # Data Cleaning Heatmap Visualization
-│   └── pdfs/             # 10-Chapter Course Module Study PDFs
-│       ├── module1.pdf
-│       ├── module2.pdf
-│       ├── module3.pdf
-│       ├── module4.pdf
-│       └── module5.pdf
+│   └── pdfs/             # Course Module Study PDFs & CHO Outline
+│       ├── cho.pdf           # Course Handout Outline (All Modules & Sub-topics)
+│       ├── module1.pdf       # Curriculum Module 01
+│       ├── module2.pdf       # Curriculum Module 02
+│       ├── module4.pdf       # Curriculum Module 04
+│       └── module5.pdf       # Curriculum Module 05
 ├── backend/
 │   ├── database.py       # Database connection setup
 │   ├── main.py           # FastAPI server endpoints
