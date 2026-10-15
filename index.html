@@ -125,14 +125,22 @@
                     </div>
 
                     <!-- Social / Profile Links -->
-                    <div style="display: flex; gap: 12px; border-top: 1px solid var(--card-border); padding-top: 16px;">
-                        <a href="https://www.linkedin.com/in/thanmai-sutraye-0570a4354" target="_blank" class="gamma-pill-btn" style="color: #0A66C2;">
+                    <div style="display: flex; gap: 10px; border-top: 1px solid var(--card-border); padding-top: 16px; flex-wrap: wrap; align-items: center;">
+                        <a href="https://www.linkedin.com/in/thanmai-suthraye-0570a4354" target="_blank" class="gamma-pill-btn" style="color: #0A66C2;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                             LinkedIn Profile →
                         </a>
                         <a href="https://github.com/Thanmai0902" target="_blank" class="gamma-pill-btn" style="color: #0F172A;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                             GitHub Portfolio →
+                        </a>
+                        <button onclick="openResumeModal()" class="gamma-pill-btn" style="background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%); color: var(--gamma-blue); border-color: rgba(37,99,235,0.45); font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            Resume 📄
+                        </button>
+                        <a href="assets/pdfs/resume.pdf" download="Sutraye_Thanmai_Resume.pdf" class="gamma-pill-btn" style="color: var(--gamma-navy);" title="Download PDF Resume">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            PDF ↓
                         </a>
                     </div>
                 </div>
@@ -306,6 +314,197 @@
         window.animateChart = function() {
             initChart();
         };
+
+        // Resume Modal Handlers
+        function openResumeModal() {
+            const modal = document.getElementById('resumeModal');
+            if (modal) {
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeResumeModal() {
+            const modal = document.getElementById('resumeModal');
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        }
+
+        window.addEventListener('click', function(e) {
+            const modal = document.getElementById('resumeModal');
+            if (e.target === modal) {
+                closeResumeModal();
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeResumeModal();
+            }
+        });
     </script>
+
+    <!-- Student Resume Modal -->
+    <div id="resumeModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="resumeTitle">
+        <div class="resume-modal-dialog">
+            <span class="close-modal" onclick="closeResumeModal()" title="Close">&times;</span>
+            
+            <div class="resume-paper">
+                <!-- Header -->
+                <div class="resume-title-block">
+                    <span class="gamma-badge" style="margin-bottom: 8px;">✦ OFFICIAL STUDENT RESUME</span>
+                    <h2 id="resumeTitle" class="resume-name">SUTRAYE THANMAI</h2>
+                    <p style="color: var(--gamma-muted); font-size: 0.95rem; font-weight: 600; margin-bottom: 8px;">
+                        B.Tech 3rd Year · Department of CSE (Data Science) · Mohan Babu University
+                    </p>
+                    <div class="resume-contact-bar">
+                        <span>📞 <strong style="color: var(--gamma-navy);">6302042583</strong></span>
+                        <span>✉️ <a href="mailto:thanmaisuthraye@gmail.com">thanmaisuthraye@gmail.com</a></span>
+                        <span>💼 <a href="https://www.linkedin.com/in/thanmai-suthraye-0570a4354" target="_blank">LinkedIn Profile</a></span>
+                        <span>💻 <a href="https://github.com/Thanmai0902" target="_blank">GitHub Portfolio</a></span>
+                    </div>
+
+                    <div style="display: flex; justify-content: center; gap: 10px; margin-top: 16px; flex-wrap: wrap;">
+                        <a href="assets/pdfs/resume.pdf" download="Sutraye_Thanmai_Resume.pdf" class="gamma-pill-btn" style="background: var(--gamma-blue); color: #FFFFFF; font-weight: 700; box-shadow: 0 4px 14px rgba(37,99,235,0.25);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            Download Resume (PDF)
+                        </a>
+                        <a href="assets/pdfs/resume.pdf" target="_blank" class="gamma-pill-btn" style="color: var(--gamma-navy);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            Fullscreen PDF ↗
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Career Objective -->
+                <div class="resume-section-heading">
+                    <span class="resume-icon">🎯</span> Career Objective
+                </div>
+                <p style="font-size: 0.95rem; color: var(--gamma-body); line-height: 1.65; margin: 4px 0 16px;">
+                    Motivated B.Tech 3rd year Data Science student with a strong foundation in programming, statistics, and data analysis. Seeking opportunities to enhance practical skills through internships, projects, and hands-on learning in data-driven environments.
+                </p>
+
+                <!-- Educational Qualifications -->
+                <div class="resume-section-heading">
+                    <span class="resume-icon">🎓</span> Educational Qualifications
+                </div>
+                <div style="overflow-x: auto; margin: 6px 0 18px;">
+                    <table class="resume-edu-table">
+                        <thead>
+                            <tr>
+                                <th>Qualification</th>
+                                <th>Institution / Board</th>
+                                <th>Year of Study / Passing</th>
+                                <th>CGPA / Percentage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>B.Tech (Data Science)</strong></td>
+                                <td>Mohan Babu University</td>
+                                <td>2024 – 2028</td>
+                                <td><strong style="color: var(--gamma-blue);">9.30 CGPA</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Intermediate (12th)</strong></td>
+                                <td>Sri Chaitanya Junior College</td>
+                                <td>2022 – 2024</td>
+                                <td><strong>93.1%</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>SSC (10th)</strong></td>
+                                <td>Gowtham E.M School</td>
+                                <td>2022</td>
+                                <td><strong>94.56%</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="resume-section-heading">
+                    <span class="resume-icon">⚡</span> Technical Skills
+                </div>
+                <div class="resume-skill-grid" style="margin-bottom: 18px;">
+                    <div class="resume-skill-item">
+                        <strong>Programming Languages:</strong><br>
+                        Python, C, Java (Basic)
+                    </div>
+                    <div class="resume-skill-item">
+                        <strong>Data Analysis &amp; Wrangling:</strong><br>
+                        Pandas, NumPy, Microsoft Excel
+                    </div>
+                    <div class="resume-skill-item">
+                        <strong>Database Management:</strong><br>
+                        MySQL (Basic), SQL Queries
+                    </div>
+                    <div class="resume-skill-item">
+                        <strong>Tools &amp; Environments:</strong><br>
+                        Jupyter Notebook, Google Colab
+                    </div>
+                    <div class="resume-skill-item">
+                        <strong>Data Visualization:</strong><br>
+                        Matplotlib, Seaborn (Basic)
+                    </div>
+                </div>
+
+                <!-- Academic Projects -->
+                <div class="resume-section-heading">
+                    <span class="resume-icon">🚀</span> Academic Projects
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 12px; margin: 8px 0 18px;">
+                    <div style="background: #F8FAFD; border: 1px solid var(--card-border); border-radius: 12px; padding: 14px 18px;">
+                        <h4 style="font-size: 1rem; color: var(--gamma-navy); margin-bottom: 4px;">Price Comparison Website</h4>
+                        <p style="font-size: 0.88rem; color: var(--gamma-body); margin: 0;">
+                            A web application designed to compare real-time product prices across e-commerce sources, enabling smart consumer analytics and decision making.
+                        </p>
+                    </div>
+                    <div style="background: #F8FAFD; border: 1px solid var(--card-border); border-radius: 12px; padding: 14px 18px;">
+                        <h4 style="font-size: 1rem; color: var(--gamma-navy); margin-bottom: 4px;">Telegram Automation Bot using n8n</h4>
+                        <p style="font-size: 0.88rem; color: var(--gamma-body); margin: 0;">
+                            Implemented conditional logic to process and respond to user messages with automated workflows and dynamic triggers.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Certifications / Workshops -->
+                <div class="resume-section-heading">
+                    <span class="resume-icon">📜</span> Certifications / Workshops
+                </div>
+                <ul class="resume-list" style="margin-bottom: 18px;">
+                    <li>AWS Skill Builder Course</li>
+                    <li>Naukri Campus – Coding exam</li>
+                    <li>Participated in Hackathon / Workshop on AWS Cloud Computing</li>
+                </ul>
+
+                <!-- Strengths & Extracurriculars -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 8px;">
+                    <div>
+                        <div class="resume-section-heading">
+                            <span class="resume-icon">💡</span> Core Strengths
+                        </div>
+                        <ul class="resume-list">
+                            <li>Quick learner</li>
+                            <li>Analytical thinking</li>
+                            <li>Problem-solving skills</li>
+                            <li>Teamwork and communication</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="resume-section-heading">
+                            <span class="resume-icon">🏆</span> Extracurricular Activities
+                        </div>
+                        <ul class="resume-list">
+                            <li>Member of Association for Computing</li>
+                            <li>Participated in technical events / seminars</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
