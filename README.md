@@ -2,7 +2,8 @@
 
 An interactive, multi-page web platform and digital lab notebook developed for the **Data Science Digital Library** course at **Mohan Babu University (MBU)**.
 
-🌐 **Live Website:** [https://thanmai0902.github.io/Data-Science-Subject-Laboratory/](https://thanmai0902.github.io/Data-Science-Subject-Laboratory/)
+🌐 **Live Website (GitHub Pages):** [https://thanmai0902.github.io/Data-Science-Subject-Laboratory/](https://thanmai0902.github.io/Data-Science-Subject-Laboratory/)  
+▲ **Deploy on Vercel:** [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FThanmai0902%2FData-Science-Subject-Laboratory)
 
 ---
 
@@ -95,6 +96,23 @@ cd backend
 pip install fastapi uvicorn sqlalchemy
 uvicorn main:app --reload --port 8001
 ```
+
+---
+
+## ▲ Deployment to Vercel
+
+The project is configured for instantaneous 1-click deployment to **Vercel** via [`vercel.json`](vercel.json):
+
+1. **One-Click Deploy**:
+   Click the **[Deploy with Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FThanmai0902%2FData-Science-Subject-Laboratory)** button.
+2. **Import via Vercel Dashboard**:
+   - Go to [vercel.com/new](https://vercel.com/new).
+   - Sign in with your GitHub account (**Thanmai0902**).
+   - Select `Data-Science-Subject-Laboratory` and click **Deploy**.
+3. **Features on Vercel**:
+   - Automatic global Edge CDN caching and clean URLs (`/modules`, `/experiments`).
+   - Seamless PDF inline streaming headers for all course modules.
+   - Continuous automatic deployment on every `git push`.
 
 ---
 
