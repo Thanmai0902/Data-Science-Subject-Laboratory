@@ -2,8 +2,7 @@
 
 An interactive, multi-page web platform and digital lab notebook developed for the **Data Science Digital Library** course at **Mohan Babu University (MBU)**.
 
-🌐 **Live Production Website (Vercel):** [https://data-science-digital-library.vercel.app](https://data-science-digital-library.vercel.app)  
-📦 **Secondary Mirror (GitHub Pages):** [https://thanmai0902.github.io/Data-Science-Subject-Laboratory/](https://thanmai0902.github.io/Data-Science-Subject-Laboratory/)  
+🌐 **Live Website:** [https://data-science-digital-library.vercel.app](https://data-science-digital-library.vercel.app)
 
 ---
 
