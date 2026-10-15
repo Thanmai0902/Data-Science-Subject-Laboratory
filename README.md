@@ -29,10 +29,19 @@ An interactive, multi-page web platform and digital lab notebook developed for t
   - One-click PDF download buttons and interactive document readers for each module.
 
 - **🔬 Lab Experiments (`experiments.html` & `experiment.html`)**:
-  - Browse all laboratory experiments.
+  - Browse 21 comprehensive syllabus laboratory experiments across 4 curriculum domains (Data Visualization with Matplotlib/Seaborn, Time Series Analysis, Data Aggregation with GroupBy, and Web Scraping/EDA with BeautifulSoup & NLP).
   - Add new experiments dynamically with form modals.
   - Detailed experiment pages featuring Aim, Objective, Theory, Requirements, Dataset, Procedure, Implementation, Output visualization graphs, and Results.
   - Built-in interactive code editor on each experiment page to execute and test experiment scripts.
+  - Direct integration with the official repository [Thanmai0902/pandas_data_formats](https://github.com/Thanmai0902/pandas_data_formats) on every experiment.
+
+- **📁 Data Science Projects (`projects.html`)**:
+  - Comprehensive laboratory project portfolio mapped directly to curriculum modules:
+    - **DS Program 1 (Module 01)**: Multi-Format Data Ingestion & Schema Normalizer (CSV, JSON, XML, Parquet, Excel).
+    - **DS Program 2 (Module 02)**: Advanced Missing Value Imputation & Outlier Handling Pipeline.
+    - **DS Program 3 (Module 03)**: Multi-Panel Statistical & Exploratory Visualization Dashboard.
+    - **DS Program 4 (Module 04)**: Automated Hypothesis Testing & Parametric/Non-Parametric Statistical Suite.
+  - Full code implementations, copy buttons, terminal/expected outputs, and links to the [pandas_data_formats](https://github.com/Thanmai0902/pandas_data_formats) repository.
 
 - **🎨 Modern Visual Design**:
   - Minimalist Lavender aesthetic with fluid animated mesh gradient background.
@@ -47,14 +56,15 @@ An interactive, multi-page web platform and digital lab notebook developed for t
 ├── index.html            # Profile & Academic Dashboard
 ├── tools.html            # Tools & Tech Stack
 ├── modules.html          # Course Modules with PDFs
-├── experiments.html      # Experiments Catalog
-├── experiment.html       # Individual Experiment View
+├── experiments.html      # 21 Syllabus Experiments Catalog
+├── experiment.html       # Individual Experiment View & Code Runner
+├── projects.html         # Data Science Programs (DS 1, 2, 3, 4)
 ├── css/
 │   └── style.css         # Styling & Animated Mesh Gradient
 ├── js/
 │   ├── config.js         # Student & Laboratory Configurations
 │   ├── experiment-details.js # Individual Experiment Logic & Editor
-│   ├── experiments.js    # Preloaded & User Lab Experiments Data
+│   ├── experiments.js    # 21 Preloaded Syllabus Experiments Data
 │   └── main.js           # Navigation, Photo Upload & State Management
 ├── assets/
 │   ├── exp1_output.png   # Time Series Output Visualization

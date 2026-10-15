@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Data Science Digital Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+            gap: 28px;
+            margin-top: 24px;
+        }
+        .project-card {
+            background: #FFFFFF;
+            border-radius: var(--radius-card);
+            border: 1.5px solid var(--card-border);
+            box-shadow: var(--card-shadow);
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            transition: transform 0.25s, box-shadow 0.25s;
+            position: relative;
+        }
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--card-shadow-hover);
+            border-color: rgba(37,99,235,0.4);
+        }
+        .project-badge {
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            color: var(--gamma-blue);
+            background: #EFF6FF;
+            padding: 3px 10px;
+            border-radius: var(--radius-pill);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            width: fit-content;
+        }
+        .project-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.55rem;
+            color: var(--gamma-navy);
+            margin: 4px 0 0;
+            line-height: 1.35;
+        }
+        .project-meta-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 0.82rem;
+            color: var(--gamma-muted);
+        }
+        .project-repo-box {
+            background: linear-gradient(135deg, #F8FAFD 0%, #EFF6FF 100%);
+            border: 1px solid var(--card-border);
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        @media (max-width: 640px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            .project-card {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Dreamy Gamma Floating Clouds -->
+    <img src="assets/gamma_cloud_top.svg" class="gamma-cloud-top" alt="Cloud">
+    <img src="assets/gamma_cloud_bottom.svg" class="gamma-cloud-bottom" alt="Cloud">
+
+    <!-- Gamma Header -->
+    <header>
+        <div class="container header-content">
+            <div class="header-left">
+                <a href="index.html" class="gamma-brand" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                    <img src="assets/mbu_logo.png" alt="MBU Logo" class="header-logo config-mbu-logo" style="height: 38px; width: auto; object-fit: contain;">
+                    <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.05rem; letter-spacing: 0.5px; color: var(--gamma-navy); text-transform: uppercase;">DATA SCIENCE DIGITAL LIBRARY</span>
+                </a>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <a href="index.html" class="nav-pill">Profile</a>
+                    <a href="tools.html" class="nav-pill">Tools</a>
+                    <a href="modules.html" class="nav-pill">Modules</a>
+                    <a href="experiments.html" class="nav-pill">Experiments</a>
+                    <a href="projects.html" class="nav-pill active">Projects</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" style="padding-top: 48px; padding-bottom: 90px;">
+        <!-- Header Banner -->
+        <div style="margin-bottom: 36px; text-align: left;">
+            <span class="gamma-badge">✦ CURRICULUM PROJECT SUITE</span>
+            <h1 style="font-size: 2.8rem; margin: 12px 0 8px;">Data Science Projects <span class="sparkle-icon">✦</span></h1>
+            <p style="color: var(--gamma-body); max-width: 760px; font-size: 1.05rem;">
+                Explore four core practical capstone projects (DS Program 1, 2, 3, 4) engineered in direct alignment with the Data Science curriculum modules. Each project demonstrates end-to-end data workflows, statistical modeling, exploratory visualization, and code integration.
+            </p>
+
+            <div style="margin-top: 18px; display: inline-flex; align-items: center; gap: 12px; background: rgba(255,255,255,0.85); border: 1.5px solid var(--card-border); padding: 10px 18px; border-radius: var(--radius-pill); box-shadow: var(--shadow-sm); flex-wrap: wrap;">
+                <span style="font-size: 0.82rem; font-weight: 700; color: var(--gamma-navy);">📦 Official Associated Repository:</span>
+                <a href="https://github.com/Thanmai0902/pandas_data_formats" target="_blank" style="color: var(--gamma-blue); font-weight: 700; text-decoration: none; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    Thanmai0902/pandas_data_formats ↗
+                </a>
+            </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+            <!-- PROJECT 1: MODULE 01 -->
+            <article class="project-card">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px;">
+                    <span class="project-badge">📘 DS PROGRAM 1 · MODULE 01</span>
+                    <span style="font-size: 0.78rem; font-weight: 700; color: var(--gamma-muted);">Subject Code: 22DS102006</span>
+                </div>
+
+                <h3 class="project-title">Automated Data Ingestion &amp; Profiling Engine</h3>
+
+                <div class="project-meta-row">
+                    <span>Curriculum Module: <strong>01 — Intro to Data Science</strong></span>
+                    <span>•</span>
+                    <span>Stack: <strong>Python, Pandas, NumPy</strong></span>
+                </div>
+
+                <p style="font-size: 0.95rem; color: var(--gamma-body); line-height: 1.6;">
+                    An end-to-end computational pipeline that automates the ingestion of heterogeneous raw file formats (CSV, JSON, Excel, and Parquet), validates schema contracts, detects null/outlier anomalies, calculates empirical moments (mean, variance, skewness), and generates an executive data dictionary.
+                </p>
+
+                <!-- Key Capabilities -->
+                <div style="background: #F8FAFD; border: 1px solid var(--card-border); border-radius: 12px; padding: 14px 18px;">
+                    <span style="font-size: 0.78rem; font-weight: 800; color: var(--gamma-navy); text-transform: uppercase; letter-spacing: 0.5px;">Core Architecture &amp; Deliverables:</span>
+                    <ul style="margin: 8px 0 0 18px; font-size: 0.88rem; color: var(--gamma-body); line-height: 1.6;">
+                        <li>Multi-format ingestion pipeline with automated delimiter inference</li>
+                        <li>Vectorized statistical profiling across numerical and categorical features</li>
+                        <li>Automated missing value quantification and duplicate detection</li>
+                        <li>Data schema export for downstream machine learning readiness</li>
+                    </ul>
+                </div>
+
+                <!-- Code Block -->
+                <div class="code-block-container" style="margin-top: 6px;">
+                    <button class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('code-proj1').innerText)">Copy Code</button>
+                    <pre class="code-block" id="code-proj1" style="max-height: 220px;">import pandas as pd
+import numpy as np
+
+def automated_data_profiler(file_path):
+    # Load dataset with pandas
+    df = pd.read_csv(file_path)
+    
+    # Statistical synthesis report
+    profile = {
+        "total_rows": len(df),
+        "total_columns": len(df.columns),
+        "null_counts": df.isnull().sum().to_dict(),
+        "memory_usage_mb": df.memory_usage(deep=True).sum() / 1024**2,
+        "numeric_summary": df.describe().to_dict()
+    }
+    print(f"[SUCCESS] Profiled {profile['total_rows']} records across {profile['total_columns']} features.")
+    return profile</pre>
+                </div>
+
+                <!-- Repository Box -->
+                <div class="project-repo-box">
+                    <div>
+                        <span style="font-size: 0.72rem; font-weight: 700; color: var(--gamma-blue); text-transform: uppercase;">Associated Repository</span>
+                        <div style="font-size: 0.92rem; font-weight: 700; color: var(--gamma-navy);">pandas_data_formats</div>
+                    </div>
+                    <a href="https://github.com/Thanmai0902/pandas_data_formats" target="_blank" class="gamma-pill-btn" style="background: #0F172A; color: #FFFFFF; font-weight: 700;">
+                        GitHub Repo ↗
+                    </a>
+                </div>
+            </article>
+
+            <!-- PROJECT 2: MODULE 02 -->
+            <article class="project-card">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px;">
+                    <span class="project-badge" style="background: #FEF3C7; color: #D97706;">🔍 DS PROGRAM 2 · MODULE 02</span>
+                    <span style="font-size: 0.78rem; font-weight: 700; color: var(--gamma-muted);">Subject Code: 22DS102006</span>
+                </div>
+
+                <h3 class="project-title">Multi-Source Review Scraper &amp; Clean ETL Pipeline</h3>
+
+                <div class="project-meta-row">
+                    <span>Curriculum Module: <strong>02 — Data Extraction &amp; Wrangling</strong></span>
+                    <span>•</span>
+                    <span>Stack: <strong>BeautifulSoup4, Requests, Pandas, SQLite</strong></span>
+                </div>
+
+                <p style="font-size: 0.95rem; color: var(--gamma-body); line-height: 1.6;">
+                    A robust web data extraction and wrangling pipeline designed to harvest product reviews, navigate DOM trees via CSS selectors, sanitize raw HTML markup, remove boilerplate stopwords, handle pagination with exponential backoff, and load clean records into a relational database.
+                </p>
+
+                <!-- Key Capabilities -->
+                <div style="background: #F8FAFD; border: 1px solid var(--card-border); border-radius: 12px; padding: 14px 18px;">
+                    <span style="font-size: 0.78rem; font-weight: 800; color: var(--gamma-navy); text-transform: uppercase; letter-spacing: 0.5px;">Core Architecture &amp; Deliverables:</span>
+                    <ul style="margin: 8px 0 0 18px; font-size: 0.88rem; color: var(--gamma-body); line-height: 1.6;">
+                        <li>Session-based HTTP parsing with customized User-Agents and rate limiting</li>
+                        <li>DOM tree extraction for titles, star ratings, review timestamps, and body text</li>
+                        <li>Automated text cleaning: Regex tokenization, stopword filtering, casing normalization</li>
+                        <li>Structured relational database export to SQLite using SQLAlchemy and Pandas</li>
+                    </ul>
+                </div>
+
+                <!-- Code Block -->
+                <div class="code-block-container" style="margin-top: 6px;">
+                    <button class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('code-proj2').innerText)">Copy Code</button>
+                    <pre class="code-block" id="code-proj2" style="max-height: 220px;">from bs4 import BeautifulSoup
+import requests
+import pandas as pd
+
+def harvest_and_clean_reviews(html_source):
+    soup = BeautifulSoup(html_source, 'html.parser')
+    records = []
+    for item in soup.select('.review'):
+        title = item.select_one('.review-title').get_text(strip=True)
+        rating = item.select_one('.rating').get_text(strip=True)
+        text = item.select_one('.review-text').get_text(strip=True)
+        records.append({'title': title, 'rating': rating, 'text': text})
+    
+    df = pd.DataFrame(records)
+    df.to_csv('product_reviews_cleaned.csv', index=False)
+    return df</pre>
+                </div>
+
+                <!-- Repository Box -->
+                <div class="project-repo-box">
+                    <div>
+                        <span style="font-size: 0.72rem; font-weight: 700; color: var(--gamma-blue); text-transform: uppercase;">Associated Repository</span>
+                        <div style="font-size: 0.92rem; font-weight: 700; color: var(--gamma-navy);">pandas_data_formats</div>
+                    </div>
+                    <a href="https://github.com/Thanmai0902/pandas_data_formats" target="_blank" class="gamma-pill-btn" style="background: #0F172A; color: #FFFFFF; font-weight: 700;">
+                        GitHub Repo ↗
+                    </a>
+                </div>
+            </article>
+
+            <!-- PROJECT 3: MODULE 03 -->
+            <article class="project-card">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px;">
+                    <span class="project-badge" style="background: #FEE2E2; color: #DC2626;">📊 DS PROGRAM 3 · MODULE 03</span>
+                    <span style="font-size: 0.78rem; font-weight: 700; color: var(--gamma-muted);">Subject Code: 22DS102006</span>
+                </div>
+
+                <h3 class="project-title">Multivariate Statistical Analytics &amp; Visual Dashboard</h3>
+
+                <div class="project-meta-row">
+                    <span>Curriculum Module: <strong>03 — Data Visualization</strong></span>
+                    <span>•</span>
+                    <span>Stack: <strong>Matplotlib, Seaborn, Pandas</strong></span>
+                </div>
+
+                <p style="font-size: 0.95rem; color: var(--gamma-body); line-height: 1.6;">
+                    A comprehensive visualization platform incorporating multi-panel subplots, side-by-side grouped bars, stacked compositions, bivariate scatter correlation plots, continuous probability density curves (KDE), and categorical box plots formatted for 300 DPI publication standards.
+                </p>
+
+                <!-- Key Capabilities -->
+                <div style="background: #F8FAFD; border: 1px solid var(--card-border); border-radius: 12px; padding: 14px 18px;">
+                    <span style="font-size: 0.78rem; font-weight: 800; color: var(--gamma-navy); text-transform: uppercase; letter-spacing: 0.5px;">Core Architecture &amp; Deliverables:</span>
+                    <ul style="margin: 8px 0 0 18px; font-size: 0.88rem; color: var(--gamma-body); line-height: 1.6;">
+                        <li>Dual stacked subplots with customized tick labels and arrow annotations</li>
+                        <li>Side-by-side grouped and vertically stacked cumulative bar charts</li>
+                        <li>Frequency histograms with superimposed continuous KDE density functions</li>
+                        <li>Multi-category box plots depicting medians, IQRs, and statistical outliers</li>
+                    </ul>
+                </div>
+
+                <!-- Code Block -->
+                <div class="code-block-container" style="margin-top: 6px;">
+                    <button class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('code-proj3').innerText)">Copy Code</button>
+                    <pre class="code-block" id="code-proj3" style="max-height: 220px;">import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+
+def build_multivariate_dashboard(df, x_col, y_col, hue_col):
+    fig, axes = plt.subplots(2, 2, figsize=(14, 10))
+    # 1. Scatter with Hue
+    sns.scatterplot(data=df, x=x_col, y=y_col, hue=hue_col, ax=axes[0,0])
+    # 2. KDE Distribution
+    sns.histplot(data=df, x=x_col, hue=hue_col, kde=True, ax=axes[0,1])
+    # 3. Categorical Boxplot
+    sns.boxplot(data=df, x=hue_col, y=y_col, ax=axes[1,0])
+    # 4. Correlation Heatmap
+    sns.heatmap(df.select_dtypes(include='number').corr(), annot=True, ax=axes[1,1])
+    plt.tight_layout()
+    plt.savefig('dashboard_export.png', dpi=300)</pre>
+                </div>
+
+                <!-- Repository Box -->
+                <div class="project-repo-box">
+                    <div>
+                        <span style="font-size: 0.72rem; font-weight: 700; color: var(--gamma-blue); text-transform: uppercase;">Associated Repository</span>
+                        <div style="font-size: 0.92rem; font-weight: 700; color: var(--gamma-navy);">pandas_data_formats</div>
+                    </div>
+                    <a href="https://github.com/Thanmai0902/pandas_data_formats" target="_blank" class="gamma-pill-btn" style="background: #0F172A; color: #FFFFFF; font-weight: 700;">
+                        GitHub Repo ↗
+                    </a>
+                </div>
+            </article>
+
+            <!-- PROJECT 4: MODULE 04 -->
+            <article class="project-card">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px;">
+                    <span class="project-badge" style="background: #EDE9FE; color: #7C3AED;">📈 DS PROGRAM 4 · MODULE 04</span>
+                    <span style="font-size: 0.78rem; font-weight: 700; color: var(--gamma-muted);">Subject Code: 22DS102006</span>
+                </div>
+
+                <h3 class="project-title">Statistical Hypothesis Testing &amp; Inference Framework</h3>
+
+                <div class="project-meta-row">
+                    <span>Curriculum Module: <strong>04 — Statistical Thinking &amp; Inference</strong></span>
+                    <span>•</span>
+                    <span>Stack: <strong>Python, SciPy, Statsmodels, Pandas</strong></span>
+                </div>
+
+                <p style="font-size: 0.95rem; color: var(--gamma-body); line-height: 1.6;">
+                    An empirical statistical inference suite that conducts automated parametric and non-parametric testing, including Independent Two-Sample t-tests, One-Way ANOVA across multi-group populations, Pearson correlation significance testing, and Bayesian probability calculations.
+                </p>
+
+                <!-- Key Capabilities -->
+                <div style="background: #F8FAFD; border: 1px solid var(--card-border); border-radius: 12px; padding: 14px 18px;">
+                    <span style="font-size: 0.78rem; font-weight: 800; color: var(--gamma-navy); text-transform: uppercase; letter-spacing: 0.5px;">Core Architecture &amp; Deliverables:</span>
+                    <ul style="margin: 8px 0 0 18px; font-size: 0.88rem; color: var(--gamma-body); line-height: 1.6;">
+                        <li>Automated normality checking via Shapiro-Wilk and variance homogeneity via Levene's test</li>
+                        <li>Student's t-test and One-Way ANOVA evaluation with automated p-value interpretation</li>
+                        <li>Cohen's d effect size measurement and confidence interval bounds estimation</li>
+                        <li>Statistical decision-making report generator for academic experimental data</li>
+                    </ul>
+                </div>
+
+                <!-- Code Block -->
+                <div class="code-block-container" style="margin-top: 6px;">
+                    <button class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('code-proj4').innerText)">Copy Code</button>
+                    <pre class="code-block" id="code-proj4" style="max-height: 220px;">from scipy import stats
+import pandas as pd
+import numpy as np
+
+def run_hypothesis_pipeline(group_a, group_b, alpha=0.05):
+    # Two-sample Independent t-test
+    t_stat, p_val = stats.ttest_ind(group_a, group_b)
+    
+    result = {
+        "t_statistic": round(t_stat, 4),
+        "p_value": round(p_val, 4),
+        "significant": bool(p_val < alpha),
+        "decision": "Reject Null Hypothesis" if p_val < alpha else "Fail to Reject Null"
+    }
+    print(f"Results: t = {result['t_statistic']}, p = {result['p_value']} -> {result['decision']}")
+    return result</pre>
+                </div>
+
+                <!-- Repository Box -->
+                <div class="project-repo-box">
+                    <div>
+                        <span style="font-size: 0.72rem; font-weight: 700; color: var(--gamma-blue); text-transform: uppercase;">Associated Repository</span>
+                        <div style="font-size: 0.92rem; font-weight: 700; color: var(--gamma-navy);">pandas_data_formats</div>
+                    </div>
+                    <a href="https://github.com/Thanmai0902/pandas_data_formats" target="_blank" class="gamma-pill-btn" style="background: #0F172A; color: #FFFFFF; font-weight: 700;">
+                        GitHub Repo ↗
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
