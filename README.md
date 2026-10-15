@@ -2,8 +2,8 @@
 
 An interactive, multi-page web platform and digital lab notebook developed for the **Data Science Digital Library** course at **Mohan Babu University (MBU)**.
 
-🌐 **Live Website (GitHub Pages):** [https://thanmai0902.github.io/Data-Science-Subject-Laboratory/](https://thanmai0902.github.io/Data-Science-Subject-Laboratory/)  
-▲ **Deploy on Vercel:** [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FThanmai0902%2FData-Science-Subject-Laboratory)
+🌐 **Live Production Website (Vercel):** [https://data-science-digital-library.vercel.app](https://data-science-digital-library.vercel.app)  
+📦 **Secondary Mirror (GitHub Pages):** [https://thanmai0902.github.io/Data-Science-Subject-Laboratory/](https://thanmai0902.github.io/Data-Science-Subject-Laboratory/)  
 
 ---
 
