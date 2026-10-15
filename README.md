@@ -10,7 +10,7 @@ An interactive, multi-page web platform and digital lab notebook developed for t
 
 - **🎓 Student Profile & Performance Dashboard (`index.html`)**:
   - Digital Student ID card with dynamic image upload and local persistence.
-  - Student academic details, roll number, section, and faculty advisor (**S.Bosu Babu**).
+  - Student academic details, roll number, section, and faculty advisor (**S.Bosubabu**).
   - Performance tracking: Practical marks, Total marks, Attendance percentage, and interactive semester growth charts built with Chart.js.
 
 - **🛠️ Tools & Technologies (`tools.html`)**:
@@ -101,5 +101,5 @@ uvicorn main:app --reload --port 8001
 - **Roll Number**: 24102A030121
 - **Branch**: CSE (Data Science)
 - **University**: Mohan Babu University (MBU)
-- **Faculty**: S.Bosu Babu
+- **Faculty**: S.Bosubabu
 - **GitHub**: [@Thanmai0902](https://github.com/Thanmai0902)
