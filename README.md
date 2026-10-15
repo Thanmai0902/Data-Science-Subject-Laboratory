@@ -23,6 +23,7 @@ An interactive, multi-page web platform and digital lab notebook developed for t
   - Core curriculum modules:
     - **Curriculum Module 01**: Introduction to Data Science
     - **Curriculum Module 02**: Data Extraction & Wrangling
+    - **Curriculum Module 03**: Data Visualization
     - **Curriculum Module 04**: Statistical Thinking & Inference
     - **Curriculum Module 05**: Time Series Analysis and Predictive Modeling
   - One-click PDF download buttons and interactive document readers for each module.
@@ -62,6 +63,7 @@ An interactive, multi-page web platform and digital lab notebook developed for t
 │       ├── cho.pdf           # Course Handout Outline (All Modules & Sub-topics)
 │       ├── module1.pdf       # Curriculum Module 01
 │       ├── module2.pdf       # Curriculum Module 02
+│       ├── module3.pdf       # Curriculum Module 03
 │       ├── module4.pdf       # Curriculum Module 04
 │       └── module5.pdf       # Curriculum Module 05
 ├── backend/
